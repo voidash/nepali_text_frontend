@@ -1,0 +1,24 @@
+text	focus	why
+चार	affricate	च should use clear-standard ch target
+छ	affricate	high-frequency छ token
+आज	affricate	ज should use clear-standard j target
+मान्छे	affricate	छ in a very common word
+चीन	affricate	current model has known /ts i n/ quality problem
+सञ्चार	affricate+anusvara	tests affricate plus contextual nasal
+जग्गा	affricate+gemination	tests ज plus geminated ग
+वर्ष	v	lexicon says b; rule fallback must be reviewed
+विकास	v	common व word
+विश्वास	v	common व word with conjuncts
+विश्वविद्यालय	v	common long व word
+प्रभाव	v	common भ/व sequence
+शिक्षा	sibilant	current default keeps sibilants collapsed
+शक्ति	sibilant	current default keeps sibilants collapsed
+शासन	sibilant	current default keeps sibilants collapsed
+संस्कृति	sibilant+anusvara	common संस्कृत-derived word
+गुण	nasal	ण still collapses to n by default
+ज्ञान	nasal	ज्ञ/ञ behavior needs careful review
+पञ्च	nasal+affricate	ञ plus च cluster
+सुलोचना	schwa	known Nepali-vs-Hindi schwa case
+नेपालले	schwa+suffix	check suffix stripping and schwa placement
+संविधान	schwa+anusvara	common formal word
+अगाडि	schwa	common word with medial vowel behavior

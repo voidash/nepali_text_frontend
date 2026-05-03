@@ -1,0 +1,64 @@
+phone	class	place	manner	voicing	aspiration	nasalized	length	notes
+i	vowel	front_close	vowel	na	none	no	short	v1.0
+e	vowel	front_close_mid	vowel	na	none	no	short	v1.0
+ax	vowel	central_open_mid	vowel	na	none	no	short	IPA /ʌ/ per Khatiwada 2009
+aa	vowel	central_open	vowel	na	none	no	short	no length contrast in spoken Nepali
+o	vowel	back_close_mid	vowel	na	none	no	short	v1.0
+u	vowel	back_close	vowel	na	none	no	short	v1.0
+in	vowel	front_close	vowel	na	none	yes	short	v1.0
+en	vowel	front_close_mid	vowel	na	none	yes	short	v1.0
+axn	vowel	central_open_mid	vowel	na	none	yes	short	v1.0
+aan	vowel	central_open	vowel	na	none	yes	short	v1.0
+un	vowel	back_close	vowel	na	none	yes	short	v1.0
+axj	vowel	diphthong_palatal	vowel	na	none	no	na	nucleus=ax glide=j
+axw	vowel	diphthong_labial	vowel	na	none	no	na	nucleus=ax glide=w
+aaj	vowel	diphthong_palatal	vowel	na	none	no	na	nucleus=aa glide=j
+aaw	vowel	diphthong_labial	vowel	na	none	no	na	nucleus=aa glide=w
+oj	vowel	diphthong_palatal	vowel	na	none	no	na	nucleus=o glide=j
+ew	vowel	diphthong_labial	vowel	na	none	no	na	nucleus=e glide=w
+ow	vowel	diphthong_labial	vowel	na	none	no	na	nucleus=o glide=w; rare
+axjn	vowel	diphthong_palatal	vowel	na	none	yes	na	nucleus=ax glide=j
+axwn	vowel	diphthong_labial	vowel	na	none	yes	na	nucleus=ax glide=w
+aajn	vowel	diphthong_palatal	vowel	na	none	yes	na	nucleus=aa glide=j
+aawn	vowel	diphthong_labial	vowel	na	none	yes	na	nucleus=aa glide=w
+ojn	vowel	diphthong_palatal	vowel	na	none	yes	na	nucleus=o glide=j; very rare
+own	vowel	diphthong_labial	vowel	na	none	yes	na	nucleus=o glide=w; very rare
+p	consonant	bilabial	stop	voiceless	none	no	na	v1.0
+ph	consonant	bilabial	stop	voiceless	aspirated	no	na	may surface as [ɸ]/[f]
+b	consonant	bilabial	stop	voiced	none	no	na	v1.0
+bh	consonant	bilabial	stop	voiced	breathy_aspirated	no	na	may lose breathiness intervocalically
+t	consonant	dental	stop	voiceless	none	no	na	v1.0
+th	consonant	dental	stop	voiceless	aspirated	no	na	v1.0
+d	consonant	dental	stop	voiced	none	no	na	v1.0
+dh	consonant	dental	stop	voiced	breathy_aspirated	no	na	v1.0
+tx	consonant	retroflex	stop	voiceless	none	no	na	cacuminal post-alveolar target
+txh	consonant	retroflex	stop	voiceless	aspirated	no	na	v1.0
+dx	consonant	retroflex	stop	voiced	none	no	na	intervocalic flap [ɽ]
+dxh	consonant	retroflex	stop	voiced	breathy_aspirated	no	na	v1.0
+k	consonant	velar	stop	voiceless	none	no	na	v1.0
+kh	consonant	velar	stop	voiceless	aspirated	no	na	v1.0
+g	consonant	velar	stop	voiced	none	no	na	v1.0
+gh	consonant	velar	stop	voiced	breathy_aspirated	no	na	v1.0
+ts	consonant	alveolar	affricate	voiceless	none	no	na	laminal alveolar (Pokharel 1989)
+tsh	consonant	alveolar	affricate	voiceless	aspirated	no	na	v1.0
+dz	consonant	alveolar	affricate	voiced	none	no	na	v1.0
+dzh	consonant	alveolar	affricate	voiced	breathy_aspirated	no	na	v1.0
+m	consonant	bilabial	nasal	voiced	none	no	na	v1.0
+n	consonant	alveolar	nasal	voiced	none	no	na	covers ञ ण in default mode
+ng	consonant	velar	nasal	voiced	none	no	na	mostly word-final
+r	consonant	alveolar	tap_trill	voiced	none	no	na	tap intervocalic; trill elsewhere
+s	consonant	alveolar	fricative	voiceless	none	no	na	covers श ष स in default mode
+h	consonant	glottal	fricative	voiced	none	no	na	IPA /ɦ/
+l	consonant	alveolar	lateral	voiced	none	no	na	v1.0
+y	consonant	palatal	approximant	voiced	none	no	na	full phoneme per Regmi 2025
+w	consonant	bilabial	approximant	voiced	none	no	na	full phoneme per Regmi 2025
+sh	consonant	postalveolar	fricative	voiceless	none	no	na	careful_only
+sx	consonant	retroflex	fricative	voiceless	none	no	na	careful_only
+ny	consonant	palatal	nasal	voiced	none	no	na	careful_only
+nx	consonant	retroflex	nasal	voiced	none	no	na	careful_only
+f	consonant	labiodental	fricative	voiceless	none	no	na	loan_only
+z	consonant	alveolar	fricative	voiced	none	no	na	loan_only
+sil	special	na	silence	na	na	na	na	v1.0
+sp	special	na	pause	na	na	na	na	v1.0
+brk	special	na	boundary	na	na	na	na	v1.0
+sent	special	na	boundary	na	na	na	na	v1.0

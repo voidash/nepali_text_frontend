@@ -1,0 +1,3 @@
+case_id	raw_text	expected_chunks	sentence_type	intonation_hint	status	notes
+pr_0001	तपाईं अहिले कहाँ जाँदै हुनुहुन्छ?	तपाईं अहिले कहाँ जाँदै हुनुहुन्छ	wh_question	fall_rise	needs_review	Seed question case
+pr_0002	कृपया रु २५० तिर्नुहोस्।	कृपया रु २५० तिर्नुहोस्	imperative	falling	needs_review	Protected currency span
