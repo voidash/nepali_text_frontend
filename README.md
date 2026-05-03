@@ -53,6 +53,15 @@ Generate a native-review TSV:
 python3 tools/emit_review_sheet.py --out /tmp/real_nepali_review.tsv
 ```
 
+Run the local listening UI:
+
+```bash
+python3 tools/generate_review_ui_assets.py
+cd review-ui
+npm install
+npm run dev
+```
+
 ## Research Position
 
 Do not treat the `real_nepali` affricate relabeling as settled phonology.
