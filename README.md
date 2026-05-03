@@ -26,6 +26,9 @@ python3 -m pip install -e ".[test]"
 python3 -m pytest tests/
 ```
 
+For the pronunciation/retraining checklist, see
+[`docs/QUALITY_GATE.md`](docs/QUALITY_GATE.md).
+
 ## Try G2P
 
 Original frontend:
@@ -42,6 +45,12 @@ Research profile:
 
 ```bash
 python3 -m real_nepali.g2p "चार छ आज मान्छे चीन"
+```
+
+Generate a native-review TSV:
+
+```bash
+python3 tools/emit_review_sheet.py --out /tmp/real_nepali_review.tsv
 ```
 
 ## Research Position
