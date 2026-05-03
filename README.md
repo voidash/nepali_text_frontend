@@ -52,3 +52,7 @@ mass-media/eastern Nepali while still analyzing च/छ/ज/झ as alveolar affr
 The current `real_nepali` profile is an experimental TTS/listener target that
 must be validated with native-speaker A/B tests.
 
+## License And Notices
+
+Code is MIT. Data tables include derived pronunciation resources; see
+[`NOTICE.md`](NOTICE.md) before publishing or redistributing.
