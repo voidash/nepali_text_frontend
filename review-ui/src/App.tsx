@@ -130,6 +130,7 @@ function App() {
 
   function exportTsv() {
     const header = [
+      "id",
       "text",
       "focus",
       "old_phones",
@@ -143,6 +144,7 @@ function App() {
       ...items.map((item) => {
         const state = reviewState[item.id] ?? { vote: "", notes: "" }
         return [
+          item.id,
           item.text,
           item.focus,
           item.old.phoneString,

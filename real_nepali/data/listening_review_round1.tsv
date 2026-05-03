@@ -1,0 +1,150 @@
+id	text	focus	why	old_phones	real_phones	changed	vote	notes
+01_चार	चार	affricate	च should use clear-standard ch target	ts aa r	ch aa r	yes	real	
+02_छ	छ	affricate	high-frequency छ token	tsh ax	chh ax	yes	real	
+03_आज	आज	affricate	ज should use clear-standard j target	aa . dz ax	aa . j ax	yes	real	
+04_मान्छे	मान्छे	affricate	छ in a very common word	m aa n . tsh e	m aa n . chh e	yes	real	
+05_चीन	चीन	affricate	current model has known /ts i n/ quality problem	ts i n	ch i n	yes	real	
+06_सञ्चार	सञ्चार	affricate+anusvara	tests affricate plus contextual nasal	s ax n . ts aa r	s ax n . ch aa r	yes	real	
+07_जग्गा	जग्गा	affricate+gemination	tests ज plus geminated ग	dz ax g . g aa	j ax g . g aa	yes	real	
+08_वर्ष	वर्ष	v	lexicon says b; rule fallback must be reviewed	b ax r . s ax	b ax r . s ax	no	tie	
+09_विकास	विकास	v	common व word	b i . k aa s	b i . k aa s	no	tie	
+10_विश्वास	विश्वास	v	common व word with conjuncts	b i s . s w aa s	b i s . s w aa s	no	tie	
+11_विश्वविद्यालय	विश्वविद्यालय	v	common long व word	b i s . s w ax . b i d . d y aa . l ax . y ax	b i s . s w ax . b i d . d y aa . l ax . y ax	no	tie	
+12_प्रभाव	प्रभाव	v	common भ/व sequence	p r ax . bh aa b	p r ax . bh aa b	no	tie	
+13_शिक्षा	शिक्षा	sibilant	current default keeps sibilants collapsed	s i k . tsh y aa	s i k . chh y aa	yes	real	
+14_शक्ति	शक्ति	sibilant	current default keeps sibilants collapsed	s ax k . t i	s ax k . t i	no	real	
+15_शासन	शासन	sibilant	current default keeps sibilants collapsed	s aa . s ax n	s aa . s ax n	no	tie	
+16_संस्कृति	संस्कृति	sibilant+anusvara	common संस्कृत-derived word	s ax m s . k r i . t i	s ax m s . k r i . t i	no	tie	
+17_गुण	गुण	nasal	ण still collapses to n by default	g u n	g u n	no	tie	
+18_ज्ञान	ज्ञान	nasal	ज्ञ/ञ behavior needs careful review	g y aan n	g y aan n	no	tie	
+19_पञ्च	पञ्च	nasal+affricate	ञ plus च cluster	p ax n . ts ax	p ax n . ch ax	yes	real	
+20_सुलोचना	सुलोचना	schwa	known Nepali-vs-Hindi schwa case	s u . l o . ts ax . n aa	s u . l o . ch ax . n aa	yes	real	
+21_नेपालले	नेपालले	schwa+suffix	check suffix stripping and schwa placement	n e . p aa l . l e	n e . p aa l . l e	no	real	
+22_संविधान	संविधान	schwa+anusvara	common formal word	s ax m . b i . dh aa n	s ax m . b i . dh aa n	no	tie	
+23_अगाडि	अगाडि	schwa	common word with medial vowel behavior	ax . g aa . dx i	ax . g aa . dx i	no	tie	
+24_छन्	छन्	verb_final_chh	high-frequency -छन् ending; verify clear chh target	tsh ax n	chh ax n	yes	real	
+25_हजार	हजार	medial_j	very common medial ज; verify j vs dz acoustic target	h ax . dz aa r	h ax . j aa r	yes	real	
+26_जानकारी	जानकारी	initial_j	common initial ज; verify j target in formal word	dz aa n . k aa . r i	j aa n . k aa . r i	yes	real	
+27_छैन	छैन	negative_chh	high-frequency छैन; verify छ target in diphthong context	tsh axj . n ax	chh axj . n ax	yes	real	
+28_जना	जना	initial_j	common classifier; verify short ज onset	dz ax . n aa	j ax . n aa	yes	real	
+29_हुन्छ	हुन्छ	verb_final_chh	common हुन्छ ending; previous TTS often exposes छ quality	h u n . tsh ax	h u n . chh ax	yes	real	
+30_जिल्ला	जिल्ला	initial_j	common place/governance word with geminated ल	dz i l . l aa	j i l . l aa	yes	old	
+31_जनाएको	जनाएको	initial_j	common reported-speech form; verify ज across suffix-like material	dz ax . n aa . e . k o	j ax . n aa . e . k o	yes	real	
+32_सार्वजनिक	सार्वजनिक	medial_j	formal word; medial ज in public/news text	s aa r . b ax . dz ax . n i k	s aa r . b ax . j ax . n i k	yes	real	
+33_जारी	जारी	initial_j	common news word; verify long आ plus ज onset	dz aa . r i	j aa . r i	yes	real	
+34_निर्वाचन	निर्वाचन	medial_ch	election word; verify च after व cluster	n i r . b aa . ts ax n	n i r . b aa . ch ax n	yes	real	
+35_राजनीतिक	राजनीतिक	medial_j	common political word; verify राज- before nasal cluster	r aa dz . n i . t i k	r aa j . n i . t i k	yes	real	
+36_पाँच	पाँच	final_ch	nasalized final च; verify not ts-like	p aan ts	p aan ch	yes	real	
+37_सञ्चालन	सञ्चालन	nasal_ch	anusvara before च in common सञ्चालन	s ax n . ts aa . l ax n	s ax n . ch aa . l ax n	yes	real	
+38_हुनेछ	हुनेछ	verb_final_chh	future-like हुनेछ; verify final छ target	h u . n e . tsh ax	h u . n e . chh ax	yes	real	
+39_आयोजना	आयोजना	medial_j	common आयोजना; medial ज after ओ	aa . y o . dz ax . n aa	aa . y o . j ax . n aa	yes	real	
+40_सामाजिक	सामाजिक	medial_j	common सामाजिक; medial ज before इक	s aa . m aa . dz i k	s aa . m aa . j i k	yes	real	
+41_छलफल	छलफल	initial_chh	common initial छ; verify plain conversational target	tsh ax l . ph ax l	chh ax l . ph ax l	yes	real	
+42_सूचना	सूचना	medial_ch	common सूचना; medial च in long vowel context	s u . ts ax . n aa	s u . ch ax . n aa	yes	old	
+43_भएपछि	भएपछि	postposition_chh	पछि compound/form; verify छ after vowel sequence	bh ax . e . p ax . tsh i	bh ax . e . p ax . chh i	yes	real	
+44_पछिल्लो	पछिल्लो	postposition_chh	common पछिल्लो; verify छ plus geminated ल	p ax . tsh i l . l o	p ax . chh i l . l o	yes	real	
+45_जाने	जाने	initial_j	common verb form; verify simple ज onset	dz aa . n e	j aa . n e	yes	real	
+46_योजना	योजना	medial_j	common योजना; verify ज after यो	y o . dz ax . n aa	y o . j ax . n aa	yes	real	
+47_बजेट	बजेट	loan_j	loan/common budget word; verify ज in loan-like context	b ax . dz e tx	b ax . j e tx	yes	real	
+48_उच्च	उच्च	geminate_ch	च्च cluster; verify strong but not Newa-like affricate	u ts . ts ax	u ch . ch ax	yes	real	
+49_खर्च	खर्च	final_ch	final च in खर्च; verify coda-like release	kh ax r . ts ax	kh ax r . ch ax	yes	real	
+50_पछि	पछि	postposition_chh	high-frequency पछि; verify छ target in function word	p ax . tsh i	p ax . chh i	yes	real	
+51_छैनन्	छैनन्	negative_chh	plural छैनन्; verify छैन variant	tsh axj . n ax n	chh axj . n ax n	yes	real	
+52_उपचार	उपचार	medial_ch	common उपचार; medial च before आ	u . p ax . ts aa r	u . p ax . ch aa r	yes	real	
+53_सचिव	सचिव	medial_ch	common सचिव; च before इ often reveals target	s ax . ts i b	s ax . ch i b	yes	real	
+54_समाजवादी	समाजवादी	medial_j	समाज-derived word; verify ज before वादी	s ax . m aa dz . b aa . d i	s ax . m aa j . b aa . d i	yes	real	
+55_देखिन्छ	देखिन्छ	verb_final_chh	देखिन्छ ending; verify final छ in passive-like form	d e . kh i n . tsh ax	d e . kh i n . chh ax	yes	real	
+56_सकिन्छ	सकिन्छ	verb_final_chh	सकिन्छ ending; verify final छ	s ax . k i n . tsh ax	s ax . k i n . chh ax	yes	real	
+57_त्यसपछि	त्यसपछि	postposition_chh	high-frequency त्यसपछि; verify छ in phrase-like token	t y ax s . p ax . tsh i	t y ax s . p ax . chh i	yes	real	
+58_गरेपछि	गरेपछि	postposition_chh	rule-path भएपछि/पछि form; verify fallback quality	g ax r e p ax tsh i	g ax r e p ax chh i	yes	real	
+59_अझै	अझै	jh	झ in अझै; verify झ target	ax . dzh axj	ax . jh axj	yes	real	
+60_बताउँछन्	बताउँछन्	verb_final_chh	-छन् after nasalized vowel; verify final छ	b ax . t aaw n . tsh ax n	b ax . t aaw n . chh ax n	yes	real	
+61_सक्छ	सक्छ	verb_final_chh	compact सक्छ cluster; verify क्छ realization	s ax k . tsh ax	s ax k . chh ax	yes	real	
+62_सुझाव	सुझाव	jh	झ in सुझाव; verify voiced aspirated affricate target	s u . dzh aa b	s u . jh aa b	yes	real	
+63_सम्झौता	सम्झौता	jh	म्झ cluster; verify झ after nasal context	s ax m . dzh axw . t aa	s ax m . jh axw . t aa	yes	real	
+64_बजे	बजे	medial_j	common time word; verify ज before ए	b ax . dz e	b ax . j e	yes	real	
+65_जुन	जुन	initial_j	common जुन; verify short ज onset before उ	dz u n	j u n	yes	real	
+66_निजी	निजी	medial_j	common निजी; verify intervocalic ज	n i . dz i	n i . j i	yes	real	
+67_छौं	छौं	orthographic_variant	छौं spelling; compare with छौँ	tsh axwn	chh axwn	yes	real	
+68_निर्वाचनमा	निर्वाचनमा	suffix_affricate	निर्वाचन plus मा; verify suffix does not change च target	n i . r w aa . ts ax n . m aa	n i . r w aa . ch ax n . m aa	yes	real	
+69_बजारमा	बजारमा	suffix_affricate	बजार plus मा; verify ज in inflected word	b ax . dz aa r . m aa	b ax . j aa r . m aa	yes	real	
+70_निर्वाचित	निर्वाचित	medial_ch	निर्वाचित; च before इ may expose target	n i r . b aa . ts i t	n i r . b aa . ch i t	yes	real	
+71_पराजित	पराजित	medial_j	पराजित; ज before इ	p ax . r aa . dz i t	p ax . r aa . j i t	yes	real	
+72_जेठ	जेठ	initial_j	common month जेठ; verify ज before ए	dz e txh	j e txh	yes	real	
+73_छु	छु	verb_final_chh	first-person छु; very short छ sample	tsh u	chh u	yes	real	
+74_जस्तो	जस्तो	initial_j	common जस्तो; verify ज before schwa	dz ax s . t o	j ax s . t o	yes	real	
+75_सहज	सहज	final_j	final ज in सहज; verify final voiced affricate target	s ax . h ax dz	s ax . h ax j	yes	real	
+76_गर्छ	गर्छ	verb_final_chh	common गर्छ; verify final छ after र्छ cluster	g ax r . tsh ax	g ax r . chh ax	yes	real	
+77_बजार	बजार	medial_j	common बजार; verify ज after schwa	b ax . dz aa r	b ax . j aa r	yes	real	
+78_छौँ	छौँ	orthographic_variant	छौँ spelling; compare with छौं	tsh axwn	chh axwn	yes	real	
+79_जनता	जनता	initial_j	common जनता; verify ज before schwa	dz ax n . t aa	j ax n . t aa	yes	real	
+80_जिम्मेवारी	जिम्मेवारी	geminate_j	जिम्मेवारी; verify ज plus gemination-like context	dz i m: e w aa r i	j i m: e w aa r i	yes	real	
+81_जित	जित	initial_j	short जित; verify ज before इ	dz i t	j i t	yes	real	
+82_जोड	जोड	initial_j	short जोड; verify ज before ओ	dz o dx	j o dx	yes	real	
+83_भन्छन्	भन्छन्	verb_final_chh	भन्छन्; verify छ after nasal	bh ax n . tsh ax n	bh ax n . chh ax n	yes	real	
+84_कर्मचारी	कर्मचारी	medial_ch	common कर्मचारी; च before आ in occupational word	k ax r . m ax . ts aa . r i	k ax r . m ax . ch aa . r i	yes	real	
+85_ज्यान	ज्यान	cluster_j	ज्य cluster; verify palatal glide interaction	dz y aa n	j y aa n	yes	real	
+86_प्रचण्ड	प्रचण्ड	cluster_ch	प्रचण्ड; च after र cluster	p r ax . ts ax n . dx ax	p r ax . ch ax n . dx ax	yes	real	
+87_सर्वोच्च	सर्वोच्च	geminate_ch	सर्वोच्च; च्च cluster in formal word	s ax r . b o ts . ts ax	s ax r . b o ch . ch ax	yes	real	
+88_छानबिन	छानबिन	initial_chh	छानबिन; verify aspirated छ before आ	tsh aa n . b i n	chh aa n . b i n	yes	real	
+89_समाचार	समाचार	medial_ch	common समाचार; verify च before आ	s ax . m aa . ts aa r	s ax . m aa . ch aa r	yes	real	
+90_गर्छन्	गर्छन्	verb_final_chh	plural गर्छन्; verify र्छन् cluster	g ax r . tsh ax n	g ax r . chh ax n	yes	real	
+91_गर्नुपर्छ	गर्नुपर्छ	verb_final_chh	high-frequency पर्छ ending in longer word	g ax r . n u . p ax r . tsh ax	g ax r . n u . p ax r . chh ax	yes	real	
+92_पर्छ	पर्छ	verb_final_chh	compact पर्छ; verify final छ	p ax r . tsh ax	p ax r . chh ax	yes	real	
+93_जनालाई	जनालाई	suffix_affricate	जना plus लाई suffix strip; verify suffix path	dz ax . n aa . l aaj	j ax . n aa . l aaj	yes	real	
+94_आजको	आजको	suffix_affricate	आज plus को; verify ज in suffixed word	aa . dz ax . k o	aa . j ax . k o	yes	real	
+95_जीवन	जीवन	initial_j	common जीवन; verify ज before ई	dz i . b ax n	j i . b ax n	yes	real	
+96_चिनियाँ	चिनियाँ	initial_ch	common चिनियाँ; verify च before इ	ts i . n i . y aan	ch i . n i . y aan	yes	real	
+97_विजयी	विजयी	medial_j	विजयी; verify ज before य	b i . dz ax . y i	b i . j ax . y i	yes	real	
+98_चुनाव	चुनाव	initial_ch	common चुनाव; verify च before उ	ts u . n aa w	ch u . n aa w	yes	real	
+99_जोखिम	जोखिम	initial_j	common जोखिम; verify ज before ओ	dz o . kh i m	j o . kh i m	yes	real	
+100_चरणमा	चरणमा	suffix_affricate	चरण plus मा; verify च in inflected form	ts ax . r ax n . m aa	ch ax . r ax n . m aa	yes	real	
+101_जस्ता	जस्ता	initial_j	plural/comparison जस्ता; verify ज before schwa	dz ax s . t aa	j ax s . t aa	yes	real	
+102_आयोजित	आयोजित	medial_j	आयोजित; verify ज before इ	aa . y o . dz i t	aa . y o . j i t	yes	real	
+103_हुन्छन्	हुन्छन्	verb_final_chh	plural हुन्छन्; verify final छ before न्	h u n . tsh ax n	h u n . chh ax n	yes	real	
+104_राजनीति	राजनीति	medial_j	राजनीति; verify राज- without following क	r aa dz . n i . t i	r aa j . n i . t i	yes	real	
+105_गरिन्छ	गरिन्छ	verb_final_chh	गरिन्छ; verify final छ in passive form	g ax . r i n . tsh ax	g ax . r i n . chh ax	yes	real	
+106_सिर्जना	सिर्जना	medial_j	सिर्जना; ज after र् cluster	s i r . dz ax . n aa	s i r . j ax . n aa	yes	real	
+107_जसले	जसले	initial_j	जसले; verify ज in common pronoun form	dz ax s . l e	j ax s . l e	yes	real	
+108_कमजोर	कमजोर	medial_j	कमजोर; verify ज before ओ	k ax m . dz o r	k ax m . j o r	yes	real	
+109_राजधानी	राजधानी	medial_j	राजधानी; verify राज- before ध	r aa dz . dh aa . n i	r aa j . dh aa . n i	yes	real	
+110_जम्मा	जम्मा	geminate_j	जम्मा; verify ज plus nasal/geminated म context	dz ax m . m aa	j ax m . m aa	yes	real	
+111_साँझ	साँझ	jh	झ in साँझ with nasalized vowel	s aan dzh	s aan jh	yes	real	
+112_प्रचण्डले	प्रचण्डले	suffix_affricate	प्रचण्ड plus ले; verify suffix-strip path	p r ax . ts ax n . dx ax . l e	p r ax . ch ax n . dx ax . l e	yes	real	
+113_जस्तै	जस्तै	initial_j	जस्तै; verify ज before diphthong	dz ax s . t axj	j ax s . t axj	yes	real	
+114_चैत	चैत	initial_chh_doubt	lexicon maps चैत as aspirated; verify with ears	tsh axj t	chh axj t	yes	real	
+115_पहिचान	पहिचान	medial_ch	पहिचान; च before आ after हि	p ax . h i . ts aa n	p ax . h i . ch aa n	yes	real	
+116_राजीनामा	राजीनामा	medial_j	राजीनामा; verify ज before ई	r aa . dz i . n aa . m aa	r aa . j i . n aa . m aa	yes	real	
+117_चलचित्र	चलचित्र	multiple_ch	चलचित्र has two च positions; verify both targets	ts ax l . ts i t . t r ax	ch ax l . ch i t . t r ax	yes	real	
+118_ऊर्जा	ऊर्जा	medial_j	ऊर्जा; verify ज after र् cluster	u r . dz aa	u r . j aa	yes	real	
+119_राज्य	राज्य	cluster_j	राज्य; verify ज्ज्य-like cluster behavior	r aa dz . dz y ax	r aa j . j y ax	yes	real	
+120_संयोजक	संयोजक	medial_j	संयोजक; verify ज before क	s ax m . y o . dz ax k	s ax m . y o . j ax k	yes	real	
+121_लाग्छ	लाग्छ	verb_final_chh	लाग्छ; verify ग्छ cluster	l aa g . tsh ax	l aa g . chh ax	yes	real	
+122_जवाफ	जवाफ	initial_j	जवाफ; verify ज plus व interaction	dz ax . w aa ph	j ax . w aa ph	yes	real	
+123_महासचिव	महासचिव	medial_ch	महासचिव; च before इ in compound-like word	m ax . h aa . s ax . ts i b	m ax . h aa . s ax . ch i b	yes		
+124_अझ	अझ	jh	short अझ; verify झ target without diphthong	ax . dzh ax	ax . jh ax	yes	real	
+125_भ्रष्टाचार	भ्रष्टाचार	medial_ch	भ्रष्टाचार; च after retroflex cluster context	bh r ax s . tx aa . ts aa r	bh r ax s . tx aa . ch aa r	yes	tie	
+126_वाणिज्य	वाणिज्य	cluster_j	वाणिज्य; ज्ज्य-like cluster from lexicon	b aa . n i dz . dz y ax	b aa . n i j . j y ax	yes	real	
+127_चालु	चालु	initial_ch	rule-path चालु; verify fallback च target	ts aa l u	ch aa l u	yes	real	
+128_असोज	असोज	final_j	final ज in असोज	ax . s o dz	ax . s o j	yes	real	
+129_औपचारिक	औपचारिक	medial_ch	औपचारिक; च after औप context	axw . p ax . ts aa . r i k	axw . p ax . ch aa . r i k	yes	real	
+130_चितवन	चितवन	initial_ch	चितवन; common place name with च before इ	ts i . t ax . w ax n	ch i . t ax . w ax n	yes	real	
+131_संरचना	संरचना	medial_ch	संरचना; च in formal -चना pattern	s ax m . r ax . ts ax . n aa	s ax m . r ax . ch ax . n aa	yes	real	
+132_चर्चा	चर्चा	multiple_ch	चर्चा has initial and final च; verify both	ts ax r . ts aa	ch ax r . ch aa	yes	real	
+133_जति	जति	initial_j	जति; verify ज in common quantifier	dz ax . t i	j ax . t i	yes	real	
+134_छोरा	छोरा	initial_chh	छोरा; छ before ओ	tsh o . r aa	chh o . r aa	yes	bad	
+135_पाइन्छ	पाइन्छ	verb_final_chh	पाइन्छ; verify छ after nasal/diphthong	p aaj n . tsh ax	p aaj n . chh ax	yes	real	
+136_विचार	विचार	medial_ch	विचार; च after वि	b i . ts aa r	b i . ch aa r	yes	real	
+137_राजदूत	राजदूत	medial_j	राजदूत; verify राज before द	r aa dz . d u t	r aa j . d u t	yes	real	
+138_समाज	समाज	final_j	final ज in समाज	s ax . m aa dz	s ax . m aa j	yes	real	
+139_डिजिटल	डिजिटल	loan_j	डिजिटल; loan-like ज before ट	dx i . dz i . tx ax l	dx i . j i . tx ax l	yes	real	
+140_कर्जा	कर्जा	medial_j	कर्जा; ज after र्	k ax r . dz aa	k ax r . j aa	yes	tie	
+141_पश्चिम	पश्चिम	medial_ch	पश्चिम; च in श्च cluster	p ax s . ts i m	p ax s . ch i m	yes	real	
+142_पूजा	पूजा	medial_j	पूजा; ज before आ	p u . dz aa	p u . j aa	yes	real	
+143_उजुरी	उजुरी	medial_j	rule-path उजुरी; verify fallback ज target	u dz u r i	u j u r i	yes	tie	
+144_चौथो	चौथो	initial_ch	चौथो; च before औ diphthong	ts axw . th o	ch axw . th o	yes	real	
+145_चीनको	चीनको	suffix_affricate	चीन plus को; known /ts i n/ issue with suffix	ts i n . k o	ch i n . k o	yes	real	
+146_चुनौती	चुनौती	initial_ch	rule-path चुनौती; verify च before उ	ts u n axw t i	ch u n axw t i	yes	real	
+147_रोजगारी	रोजगारी	medial_j	rule-path रोजगारी; verify ज before ग	r o dz ax g aa r i	r o j ax g aa r i	yes	tie	
+148_बमोजिम	बमोजिम	medial_j	बमोजिम; verify ज before इ	b ax . m o . dz i m	b ax . m o . j i m	yes	real	
+149_चुनावमा	चुनावमा	suffix_affricate	चुनाव plus मा; verify च in inflected word	ts u . n aa b . m aa	ch u . n aa b . m aa	yes	real	
