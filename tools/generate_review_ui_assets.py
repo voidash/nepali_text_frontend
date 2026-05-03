@@ -148,6 +148,8 @@ def main() -> int:
     args.out.mkdir(parents=True, exist_ok=True)
     audio_dir = args.out / "samples"
     audio_dir.mkdir(parents=True, exist_ok=True)
+    for stale in audio_dir.glob("*.wav"):
+        stale.unlink()
 
     items: list[dict] = []
     with open(args.words, encoding="utf-8") as f:
@@ -207,4 +209,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

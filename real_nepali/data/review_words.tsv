@@ -22,3 +22,129 @@ text	focus	why
 नेपालले	schwa+suffix	check suffix stripping and schwa placement
 संविधान	schwa+anusvara	common formal word
 अगाडि	schwa	common word with medial vowel behavior
+छन्	verb_final_chh	high-frequency -छन् ending; verify clear chh target
+हजार	medial_j	very common medial ज; verify j vs dz acoustic target
+जानकारी	initial_j	common initial ज; verify j target in formal word
+छैन	negative_chh	high-frequency छैन; verify छ target in diphthong context
+जना	initial_j	common classifier; verify short ज onset
+हुन्छ	verb_final_chh	common हुन्छ ending; previous TTS often exposes छ quality
+जिल्ला	initial_j	common place/governance word with geminated ल
+जनाएको	initial_j	common reported-speech form; verify ज across suffix-like material
+सार्वजनिक	medial_j	formal word; medial ज in public/news text
+जारी	initial_j	common news word; verify long आ plus ज onset
+निर्वाचन	medial_ch	election word; verify च after व cluster
+राजनीतिक	medial_j	common political word; verify राज- before nasal cluster
+पाँच	final_ch	nasalized final च; verify not ts-like
+सञ्चालन	nasal_ch	anusvara before च in common सञ्चालन
+हुनेछ	verb_final_chh	future-like हुनेछ; verify final छ target
+आयोजना	medial_j	common आयोजना; medial ज after ओ
+सामाजिक	medial_j	common सामाजिक; medial ज before इक
+छलफल	initial_chh	common initial छ; verify plain conversational target
+सूचना	medial_ch	common सूचना; medial च in long vowel context
+भएपछि	postposition_chh	पछि compound/form; verify छ after vowel sequence
+पछिल्लो	postposition_chh	common पछिल्लो; verify छ plus geminated ल
+जाने	initial_j	common verb form; verify simple ज onset
+योजना	medial_j	common योजना; verify ज after यो
+बजेट	loan_j	loan/common budget word; verify ज in loan-like context
+उच्च	geminate_ch	च्च cluster; verify strong but not Newa-like affricate
+खर्च	final_ch	final च in खर्च; verify coda-like release
+पछि	postposition_chh	high-frequency पछि; verify छ target in function word
+छैनन्	negative_chh	plural छैनन्; verify छैन variant
+उपचार	medial_ch	common उपचार; medial च before आ
+सचिव	medial_ch	common सचिव; च before इ often reveals target
+समाजवादी	medial_j	समाज-derived word; verify ज before वादी
+देखिन्छ	verb_final_chh	देखिन्छ ending; verify final छ in passive-like form
+सकिन्छ	verb_final_chh	सकिन्छ ending; verify final छ
+त्यसपछि	postposition_chh	high-frequency त्यसपछि; verify छ in phrase-like token
+गरेपछि	postposition_chh	rule-path भएपछि/पछि form; verify fallback quality
+अझै	jh	झ in अझै; verify झ target
+बताउँछन्	verb_final_chh	-छन् after nasalized vowel; verify final छ
+सक्छ	verb_final_chh	compact सक्छ cluster; verify क्छ realization
+सुझाव	jh	झ in सुझाव; verify voiced aspirated affricate target
+सम्झौता	jh	म्झ cluster; verify झ after nasal context
+बजे	medial_j	common time word; verify ज before ए
+जुन	initial_j	common जुन; verify short ज onset before उ
+निजी	medial_j	common निजी; verify intervocalic ज
+छौं	orthographic_variant	छौं spelling; compare with छौँ
+निर्वाचनमा	suffix_affricate	निर्वाचन plus मा; verify suffix does not change च target
+बजारमा	suffix_affricate	बजार plus मा; verify ज in inflected word
+निर्वाचित	medial_ch	निर्वाचित; च before इ may expose target
+पराजित	medial_j	पराजित; ज before इ
+जेठ	initial_j	common month जेठ; verify ज before ए
+छु	verb_final_chh	first-person छु; very short छ sample
+जस्तो	initial_j	common जस्तो; verify ज before schwa
+सहज	final_j	final ज in सहज; verify final voiced affricate target
+गर्छ	verb_final_chh	common गर्छ; verify final छ after र्छ cluster
+बजार	medial_j	common बजार; verify ज after schwa
+छौँ	orthographic_variant	छौँ spelling; compare with छौं
+जनता	initial_j	common जनता; verify ज before schwa
+जिम्मेवारी	geminate_j	जिम्मेवारी; verify ज plus gemination-like context
+जित	initial_j	short जित; verify ज before इ
+जोड	initial_j	short जोड; verify ज before ओ
+भन्छन्	verb_final_chh	भन्छन्; verify छ after nasal
+कर्मचारी	medial_ch	common कर्मचारी; च before आ in occupational word
+ज्यान	cluster_j	ज्य cluster; verify palatal glide interaction
+प्रचण्ड	cluster_ch	प्रचण्ड; च after र cluster
+सर्वोच्च	geminate_ch	सर्वोच्च; च्च cluster in formal word
+छानबिन	initial_chh	छानबिन; verify aspirated छ before आ
+समाचार	medial_ch	common समाचार; verify च before आ
+गर्छन्	verb_final_chh	plural गर्छन्; verify र्छन् cluster
+गर्नुपर्छ	verb_final_chh	high-frequency पर्छ ending in longer word
+पर्छ	verb_final_chh	compact पर्छ; verify final छ
+जनालाई	suffix_affricate	जना plus लाई suffix strip; verify suffix path
+आजको	suffix_affricate	आज plus को; verify ज in suffixed word
+जीवन	initial_j	common जीवन; verify ज before ई
+चिनियाँ	initial_ch	common चिनियाँ; verify च before इ
+विजयी	medial_j	विजयी; verify ज before य
+चुनाव	initial_ch	common चुनाव; verify च before उ
+जोखिम	initial_j	common जोखिम; verify ज before ओ
+चरणमा	suffix_affricate	चरण plus मा; verify च in inflected form
+जस्ता	initial_j	plural/comparison जस्ता; verify ज before schwa
+आयोजित	medial_j	आयोजित; verify ज before इ
+हुन्छन्	verb_final_chh	plural हुन्छन्; verify final छ before न्
+राजनीति	medial_j	राजनीति; verify राज- without following क
+गरिन्छ	verb_final_chh	गरिन्छ; verify final छ in passive form
+सिर्जना	medial_j	सिर्जना; ज after र् cluster
+जसले	initial_j	जसले; verify ज in common pronoun form
+कमजोर	medial_j	कमजोर; verify ज before ओ
+राजधानी	medial_j	राजधानी; verify राज- before ध
+जम्मा	geminate_j	जम्मा; verify ज plus nasal/geminated म context
+साँझ	jh	झ in साँझ with nasalized vowel
+प्रचण्डले	suffix_affricate	प्रचण्ड plus ले; verify suffix-strip path
+जस्तै	initial_j	जस्तै; verify ज before diphthong
+चैत	initial_chh_doubt	lexicon maps चैत as aspirated; verify with ears
+पहिचान	medial_ch	पहिचान; च before आ after हि
+राजीनामा	medial_j	राजीनामा; verify ज before ई
+चलचित्र	multiple_ch	चलचित्र has two च positions; verify both targets
+ऊर्जा	medial_j	ऊर्जा; verify ज after र् cluster
+राज्य	cluster_j	राज्य; verify ज्ज्य-like cluster behavior
+संयोजक	medial_j	संयोजक; verify ज before क
+लाग्छ	verb_final_chh	लाग्छ; verify ग्छ cluster
+जवाफ	initial_j	जवाफ; verify ज plus व interaction
+महासचिव	medial_ch	महासचिव; च before इ in compound-like word
+अझ	jh	short अझ; verify झ target without diphthong
+भ्रष्टाचार	medial_ch	भ्रष्टाचार; च after retroflex cluster context
+वाणिज्य	cluster_j	वाणिज्य; ज्ज्य-like cluster from lexicon
+चालु	initial_ch	rule-path चालु; verify fallback च target
+असोज	final_j	final ज in असोज
+औपचारिक	medial_ch	औपचारिक; च after औप context
+चितवन	initial_ch	चितवन; common place name with च before इ
+संरचना	medial_ch	संरचना; च in formal -चना pattern
+चर्चा	multiple_ch	चर्चा has initial and final च; verify both
+जति	initial_j	जति; verify ज in common quantifier
+छोरा	initial_chh	छोरा; छ before ओ
+पाइन्छ	verb_final_chh	पाइन्छ; verify छ after nasal/diphthong
+विचार	medial_ch	विचार; च after वि
+राजदूत	medial_j	राजदूत; verify राज before द
+समाज	final_j	final ज in समाज
+डिजिटल	loan_j	डिजिटल; loan-like ज before ट
+कर्जा	medial_j	कर्जा; ज after र्
+पश्चिम	medial_ch	पश्चिम; च in श्च cluster
+पूजा	medial_j	पूजा; ज before आ
+उजुरी	medial_j	rule-path उजुरी; verify fallback ज target
+चौथो	initial_ch	चौथो; च before औ diphthong
+चीनको	suffix_affricate	चीन plus को; known /ts i n/ issue with suffix
+चुनौती	initial_ch	rule-path चुनौती; verify च before उ
+रोजगारी	medial_j	rule-path रोजगारी; verify ज before ग
+बमोजिम	medial_j	बमोजिम; verify ज before इ
+चुनावमा	suffix_affricate	चुनाव plus मा; verify च in inflected word

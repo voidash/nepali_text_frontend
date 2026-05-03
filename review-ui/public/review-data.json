@@ -895,6 +895,4976 @@
         "audio": "/samples/23_अगाडि_real.wav"
       },
       "changed": false
+    },
+    {
+      "id": "24_छन्",
+      "text": "छन्",
+      "focus": "verb_final_chh",
+      "why": "high-frequency -छन् ending; verify clear chh target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "tsh ax n",
+        "espeakPayload": "[[ts h V n]]",
+        "audio": "/samples/24_छन्_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "chh ax n",
+        "espeakPayload": "[[tS h V n]]",
+        "audio": "/samples/24_छन्_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "25_हजार",
+      "text": "हजार",
+      "focus": "medial_j",
+      "why": "very common medial ज; verify j vs dz acoustic target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "ax",
+          ".",
+          "dz",
+          "aa",
+          "r"
+        ],
+        "phoneString": "h ax . dz aa r",
+        "espeakPayload": "[[h V dz a: r]]",
+        "audio": "/samples/25_हजार_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "ax",
+          ".",
+          "j",
+          "aa",
+          "r"
+        ],
+        "phoneString": "h ax . j aa r",
+        "espeakPayload": "[[h V dZ a: r]]",
+        "audio": "/samples/25_हजार_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "26_जानकारी",
+      "text": "जानकारी",
+      "focus": "initial_j",
+      "why": "common initial ज; verify j target in formal word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "aa",
+          "n",
+          ".",
+          "k",
+          "aa",
+          ".",
+          "r",
+          "i"
+        ],
+        "phoneString": "dz aa n . k aa . r i",
+        "espeakPayload": "[[dz a: n k a: r i]]",
+        "audio": "/samples/26_जानकारी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "aa",
+          "n",
+          ".",
+          "k",
+          "aa",
+          ".",
+          "r",
+          "i"
+        ],
+        "phoneString": "j aa n . k aa . r i",
+        "espeakPayload": "[[dZ a: n k a: r i]]",
+        "audio": "/samples/26_जानकारी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "27_छैन",
+      "text": "छैन",
+      "focus": "negative_chh",
+      "why": "high-frequency छैन; verify छ target in diphthong context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "axj",
+          ".",
+          "n",
+          "ax"
+        ],
+        "phoneString": "tsh axj . n ax",
+        "espeakPayload": "[[ts h VI n V]]",
+        "audio": "/samples/27_छैन_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "axj",
+          ".",
+          "n",
+          "ax"
+        ],
+        "phoneString": "chh axj . n ax",
+        "espeakPayload": "[[tS h VI n V]]",
+        "audio": "/samples/27_छैन_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "28_जना",
+      "text": "जना",
+      "focus": "initial_j",
+      "why": "common classifier; verify short ज onset",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "dz ax . n aa",
+        "espeakPayload": "[[dz V n a:]]",
+        "audio": "/samples/28_जना_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "j ax . n aa",
+        "espeakPayload": "[[dZ V n a:]]",
+        "audio": "/samples/28_जना_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "29_हुन्छ",
+      "text": "हुन्छ",
+      "focus": "verb_final_chh",
+      "why": "common हुन्छ ending; previous TTS often exposes छ quality",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "u",
+          "n",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "h u n . tsh ax",
+        "espeakPayload": "[[h u n ts h V]]",
+        "audio": "/samples/29_हुन्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "u",
+          "n",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "h u n . chh ax",
+        "espeakPayload": "[[h u n tS h V]]",
+        "audio": "/samples/29_हुन्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "30_जिल्ला",
+      "text": "जिल्ला",
+      "focus": "initial_j",
+      "why": "common place/governance word with geminated ल",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "i",
+          "l",
+          ".",
+          "l",
+          "aa"
+        ],
+        "phoneString": "dz i l . l aa",
+        "espeakPayload": "[[dz i l l a:]]",
+        "audio": "/samples/30_जिल्ला_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "i",
+          "l",
+          ".",
+          "l",
+          "aa"
+        ],
+        "phoneString": "j i l . l aa",
+        "espeakPayload": "[[dZ i l l a:]]",
+        "audio": "/samples/30_जिल्ला_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "31_जनाएको",
+      "text": "जनाएको",
+      "focus": "initial_j",
+      "why": "common reported-speech form; verify ज across suffix-like material",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          ".",
+          "n",
+          "aa",
+          ".",
+          "e",
+          ".",
+          "k",
+          "o"
+        ],
+        "phoneString": "dz ax . n aa . e . k o",
+        "espeakPayload": "[[dz V n a: e: k o:]]",
+        "audio": "/samples/31_जनाएको_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          ".",
+          "n",
+          "aa",
+          ".",
+          "e",
+          ".",
+          "k",
+          "o"
+        ],
+        "phoneString": "j ax . n aa . e . k o",
+        "espeakPayload": "[[dZ V n a: e: k o:]]",
+        "audio": "/samples/31_जनाएको_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "32_सार्वजनिक",
+      "text": "सार्वजनिक",
+      "focus": "medial_j",
+      "why": "formal word; medial ज in public/news text",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "aa",
+          "r",
+          ".",
+          "b",
+          "ax",
+          ".",
+          "dz",
+          "ax",
+          ".",
+          "n",
+          "i",
+          "k"
+        ],
+        "phoneString": "s aa r . b ax . dz ax . n i k",
+        "espeakPayload": "[[s a: r b V dz V n i k]]",
+        "audio": "/samples/32_सार्वजनिक_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "aa",
+          "r",
+          ".",
+          "b",
+          "ax",
+          ".",
+          "j",
+          "ax",
+          ".",
+          "n",
+          "i",
+          "k"
+        ],
+        "phoneString": "s aa r . b ax . j ax . n i k",
+        "espeakPayload": "[[s a: r b V dZ V n i k]]",
+        "audio": "/samples/32_सार्वजनिक_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "33_जारी",
+      "text": "जारी",
+      "focus": "initial_j",
+      "why": "common news word; verify long आ plus ज onset",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "aa",
+          ".",
+          "r",
+          "i"
+        ],
+        "phoneString": "dz aa . r i",
+        "espeakPayload": "[[dz a: r i]]",
+        "audio": "/samples/33_जारी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "aa",
+          ".",
+          "r",
+          "i"
+        ],
+        "phoneString": "j aa . r i",
+        "espeakPayload": "[[dZ a: r i]]",
+        "audio": "/samples/33_जारी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "34_निर्वाचन",
+      "text": "निर्वाचन",
+      "focus": "medial_ch",
+      "why": "election word; verify च after व cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          "r",
+          ".",
+          "b",
+          "aa",
+          ".",
+          "ts",
+          "ax",
+          "n"
+        ],
+        "phoneString": "n i r . b aa . ts ax n",
+        "espeakPayload": "[[n i r b a: ts V n]]",
+        "audio": "/samples/34_निर्वाचन_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          "r",
+          ".",
+          "b",
+          "aa",
+          ".",
+          "ch",
+          "ax",
+          "n"
+        ],
+        "phoneString": "n i r . b aa . ch ax n",
+        "espeakPayload": "[[n i r b a: tS V n]]",
+        "audio": "/samples/34_निर्वाचन_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "35_राजनीतिक",
+      "text": "राजनीतिक",
+      "focus": "medial_j",
+      "why": "common political word; verify राज- before nasal cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "dz",
+          ".",
+          "n",
+          "i",
+          ".",
+          "t",
+          "i",
+          "k"
+        ],
+        "phoneString": "r aa dz . n i . t i k",
+        "espeakPayload": "[[r a: dz n i t i k]]",
+        "audio": "/samples/35_राजनीतिक_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "j",
+          ".",
+          "n",
+          "i",
+          ".",
+          "t",
+          "i",
+          "k"
+        ],
+        "phoneString": "r aa j . n i . t i k",
+        "espeakPayload": "[[r a: dZ n i t i k]]",
+        "audio": "/samples/35_राजनीतिक_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "36_पाँच",
+      "text": "पाँच",
+      "focus": "final_ch",
+      "why": "nasalized final च; verify not ts-like",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "aan",
+          "ts"
+        ],
+        "phoneString": "p aan ts",
+        "espeakPayload": "[[p a:~ ts]]",
+        "audio": "/samples/36_पाँच_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "aan",
+          "ch"
+        ],
+        "phoneString": "p aan ch",
+        "espeakPayload": "[[p a:~ tS]]",
+        "audio": "/samples/36_पाँच_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "37_सञ्चालन",
+      "text": "सञ्चालन",
+      "focus": "nasal_ch",
+      "why": "anusvara before च in common सञ्चालन",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "n",
+          ".",
+          "ts",
+          "aa",
+          ".",
+          "l",
+          "ax",
+          "n"
+        ],
+        "phoneString": "s ax n . ts aa . l ax n",
+        "espeakPayload": "[[s V n ts a: l V n]]",
+        "audio": "/samples/37_सञ्चालन_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "n",
+          ".",
+          "ch",
+          "aa",
+          ".",
+          "l",
+          "ax",
+          "n"
+        ],
+        "phoneString": "s ax n . ch aa . l ax n",
+        "espeakPayload": "[[s V n tS a: l V n]]",
+        "audio": "/samples/37_सञ्चालन_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "38_हुनेछ",
+      "text": "हुनेछ",
+      "focus": "verb_final_chh",
+      "why": "future-like हुनेछ; verify final छ target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "u",
+          ".",
+          "n",
+          "e",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "h u . n e . tsh ax",
+        "espeakPayload": "[[h u n e: ts h V]]",
+        "audio": "/samples/38_हुनेछ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "u",
+          ".",
+          "n",
+          "e",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "h u . n e . chh ax",
+        "espeakPayload": "[[h u n e: tS h V]]",
+        "audio": "/samples/38_हुनेछ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "39_आयोजना",
+      "text": "आयोजना",
+      "focus": "medial_j",
+      "why": "common आयोजना; medial ज after ओ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "aa",
+          ".",
+          "y",
+          "o",
+          ".",
+          "dz",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "aa . y o . dz ax . n aa",
+        "espeakPayload": "[[a: j o: dz V n a:]]",
+        "audio": "/samples/39_आयोजना_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "aa",
+          ".",
+          "y",
+          "o",
+          ".",
+          "j",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "aa . y o . j ax . n aa",
+        "espeakPayload": "[[a: j o: dZ V n a:]]",
+        "audio": "/samples/39_आयोजना_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "40_सामाजिक",
+      "text": "सामाजिक",
+      "focus": "medial_j",
+      "why": "common सामाजिक; medial ज before इक",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "aa",
+          ".",
+          "m",
+          "aa",
+          ".",
+          "dz",
+          "i",
+          "k"
+        ],
+        "phoneString": "s aa . m aa . dz i k",
+        "espeakPayload": "[[s a: m a: dz i k]]",
+        "audio": "/samples/40_सामाजिक_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "aa",
+          ".",
+          "m",
+          "aa",
+          ".",
+          "j",
+          "i",
+          "k"
+        ],
+        "phoneString": "s aa . m aa . j i k",
+        "espeakPayload": "[[s a: m a: dZ i k]]",
+        "audio": "/samples/40_सामाजिक_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "41_छलफल",
+      "text": "छलफल",
+      "focus": "initial_chh",
+      "why": "common initial छ; verify plain conversational target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "ax",
+          "l",
+          ".",
+          "ph",
+          "ax",
+          "l"
+        ],
+        "phoneString": "tsh ax l . ph ax l",
+        "espeakPayload": "[[ts h V l p# V l]]",
+        "audio": "/samples/41_छलफल_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "ax",
+          "l",
+          ".",
+          "ph",
+          "ax",
+          "l"
+        ],
+        "phoneString": "chh ax l . ph ax l",
+        "espeakPayload": "[[tS h V l p# V l]]",
+        "audio": "/samples/41_छलफल_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "42_सूचना",
+      "text": "सूचना",
+      "focus": "medial_ch",
+      "why": "common सूचना; medial च in long vowel context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "u",
+          ".",
+          "ts",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "s u . ts ax . n aa",
+        "espeakPayload": "[[s u ts V n a:]]",
+        "audio": "/samples/42_सूचना_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "u",
+          ".",
+          "ch",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "s u . ch ax . n aa",
+        "espeakPayload": "[[s u tS V n a:]]",
+        "audio": "/samples/42_सूचना_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "43_भएपछि",
+      "text": "भएपछि",
+      "focus": "postposition_chh",
+      "why": "पछि compound/form; verify छ after vowel sequence",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "bh",
+          "ax",
+          ".",
+          "e",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "tsh",
+          "i"
+        ],
+        "phoneString": "bh ax . e . p ax . tsh i",
+        "espeakPayload": "[[b# V e: p V ts h i]]",
+        "audio": "/samples/43_भएपछि_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "bh",
+          "ax",
+          ".",
+          "e",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "chh",
+          "i"
+        ],
+        "phoneString": "bh ax . e . p ax . chh i",
+        "espeakPayload": "[[b# V e: p V tS h i]]",
+        "audio": "/samples/43_भएपछि_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "44_पछिल्लो",
+      "text": "पछिल्लो",
+      "focus": "postposition_chh",
+      "why": "common पछिल्लो; verify छ plus geminated ल",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "tsh",
+          "i",
+          "l",
+          ".",
+          "l",
+          "o"
+        ],
+        "phoneString": "p ax . tsh i l . l o",
+        "espeakPayload": "[[p V ts h i l l o:]]",
+        "audio": "/samples/44_पछिल्लो_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "chh",
+          "i",
+          "l",
+          ".",
+          "l",
+          "o"
+        ],
+        "phoneString": "p ax . chh i l . l o",
+        "espeakPayload": "[[p V tS h i l l o:]]",
+        "audio": "/samples/44_पछिल्लो_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "45_जाने",
+      "text": "जाने",
+      "focus": "initial_j",
+      "why": "common verb form; verify simple ज onset",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "aa",
+          ".",
+          "n",
+          "e"
+        ],
+        "phoneString": "dz aa . n e",
+        "espeakPayload": "[[dz a: n e:]]",
+        "audio": "/samples/45_जाने_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "aa",
+          ".",
+          "n",
+          "e"
+        ],
+        "phoneString": "j aa . n e",
+        "espeakPayload": "[[dZ a: n e:]]",
+        "audio": "/samples/45_जाने_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "46_योजना",
+      "text": "योजना",
+      "focus": "medial_j",
+      "why": "common योजना; verify ज after यो",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "y",
+          "o",
+          ".",
+          "dz",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "y o . dz ax . n aa",
+        "espeakPayload": "[[j o: dz V n a:]]",
+        "audio": "/samples/46_योजना_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "y",
+          "o",
+          ".",
+          "j",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "y o . j ax . n aa",
+        "espeakPayload": "[[j o: dZ V n a:]]",
+        "audio": "/samples/46_योजना_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "47_बजेट",
+      "text": "बजेट",
+      "focus": "loan_j",
+      "why": "loan/common budget word; verify ज in loan-like context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "dz",
+          "e",
+          "tx"
+        ],
+        "phoneString": "b ax . dz e tx",
+        "espeakPayload": "[[b V dz e: t.]]",
+        "audio": "/samples/47_बजेट_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "j",
+          "e",
+          "tx"
+        ],
+        "phoneString": "b ax . j e tx",
+        "espeakPayload": "[[b V dZ e: t.]]",
+        "audio": "/samples/47_बजेट_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "48_उच्च",
+      "text": "उच्च",
+      "focus": "geminate_ch",
+      "why": "च्च cluster; verify strong but not Newa-like affricate",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "u",
+          "ts",
+          ".",
+          "ts",
+          "ax"
+        ],
+        "phoneString": "u ts . ts ax",
+        "espeakPayload": "[[u ts ts V]]",
+        "audio": "/samples/48_उच्च_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "u",
+          "ch",
+          ".",
+          "ch",
+          "ax"
+        ],
+        "phoneString": "u ch . ch ax",
+        "espeakPayload": "[[u tS tS V]]",
+        "audio": "/samples/48_उच्च_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "49_खर्च",
+      "text": "खर्च",
+      "focus": "final_ch",
+      "why": "final च in खर्च; verify coda-like release",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "kh",
+          "ax",
+          "r",
+          ".",
+          "ts",
+          "ax"
+        ],
+        "phoneString": "kh ax r . ts ax",
+        "espeakPayload": "[[k# V r ts V]]",
+        "audio": "/samples/49_खर्च_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "kh",
+          "ax",
+          "r",
+          ".",
+          "ch",
+          "ax"
+        ],
+        "phoneString": "kh ax r . ch ax",
+        "espeakPayload": "[[k# V r tS V]]",
+        "audio": "/samples/49_खर्च_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "50_पछि",
+      "text": "पछि",
+      "focus": "postposition_chh",
+      "why": "high-frequency पछि; verify छ target in function word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "tsh",
+          "i"
+        ],
+        "phoneString": "p ax . tsh i",
+        "espeakPayload": "[[p V ts h i]]",
+        "audio": "/samples/50_पछि_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "chh",
+          "i"
+        ],
+        "phoneString": "p ax . chh i",
+        "espeakPayload": "[[p V tS h i]]",
+        "audio": "/samples/50_पछि_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "51_छैनन्",
+      "text": "छैनन्",
+      "focus": "negative_chh",
+      "why": "plural छैनन्; verify छैन variant",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "axj",
+          ".",
+          "n",
+          "ax",
+          "n"
+        ],
+        "phoneString": "tsh axj . n ax n",
+        "espeakPayload": "[[ts h VI n V n]]",
+        "audio": "/samples/51_छैनन्_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "axj",
+          ".",
+          "n",
+          "ax",
+          "n"
+        ],
+        "phoneString": "chh axj . n ax n",
+        "espeakPayload": "[[tS h VI n V n]]",
+        "audio": "/samples/51_छैनन्_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "52_उपचार",
+      "text": "उपचार",
+      "focus": "medial_ch",
+      "why": "common उपचार; medial च before आ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "u",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "ts",
+          "aa",
+          "r"
+        ],
+        "phoneString": "u . p ax . ts aa r",
+        "espeakPayload": "[[u p V ts a: r]]",
+        "audio": "/samples/52_उपचार_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "u",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "ch",
+          "aa",
+          "r"
+        ],
+        "phoneString": "u . p ax . ch aa r",
+        "espeakPayload": "[[u p V tS a: r]]",
+        "audio": "/samples/52_उपचार_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "53_सचिव",
+      "text": "सचिव",
+      "focus": "medial_ch",
+      "why": "common सचिव; च before इ often reveals target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "ts",
+          "i",
+          "b"
+        ],
+        "phoneString": "s ax . ts i b",
+        "espeakPayload": "[[s V ts i b]]",
+        "audio": "/samples/53_सचिव_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "ch",
+          "i",
+          "b"
+        ],
+        "phoneString": "s ax . ch i b",
+        "espeakPayload": "[[s V tS i b]]",
+        "audio": "/samples/53_सचिव_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "54_समाजवादी",
+      "text": "समाजवादी",
+      "focus": "medial_j",
+      "why": "समाज-derived word; verify ज before वादी",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "m",
+          "aa",
+          "dz",
+          ".",
+          "b",
+          "aa",
+          ".",
+          "d",
+          "i"
+        ],
+        "phoneString": "s ax . m aa dz . b aa . d i",
+        "espeakPayload": "[[s V m a: dz b a: d i]]",
+        "audio": "/samples/54_समाजवादी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "m",
+          "aa",
+          "j",
+          ".",
+          "b",
+          "aa",
+          ".",
+          "d",
+          "i"
+        ],
+        "phoneString": "s ax . m aa j . b aa . d i",
+        "espeakPayload": "[[s V m a: dZ b a: d i]]",
+        "audio": "/samples/54_समाजवादी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "55_देखिन्छ",
+      "text": "देखिन्छ",
+      "focus": "verb_final_chh",
+      "why": "देखिन्छ ending; verify final छ in passive-like form",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "d",
+          "e",
+          ".",
+          "kh",
+          "i",
+          "n",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "d e . kh i n . tsh ax",
+        "espeakPayload": "[[d e: k# i n ts h V]]",
+        "audio": "/samples/55_देखिन्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "d",
+          "e",
+          ".",
+          "kh",
+          "i",
+          "n",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "d e . kh i n . chh ax",
+        "espeakPayload": "[[d e: k# i n tS h V]]",
+        "audio": "/samples/55_देखिन्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "56_सकिन्छ",
+      "text": "सकिन्छ",
+      "focus": "verb_final_chh",
+      "why": "सकिन्छ ending; verify final छ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "k",
+          "i",
+          "n",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "s ax . k i n . tsh ax",
+        "espeakPayload": "[[s V k i n ts h V]]",
+        "audio": "/samples/56_सकिन्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "k",
+          "i",
+          "n",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "s ax . k i n . chh ax",
+        "espeakPayload": "[[s V k i n tS h V]]",
+        "audio": "/samples/56_सकिन्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "57_त्यसपछि",
+      "text": "त्यसपछि",
+      "focus": "postposition_chh",
+      "why": "high-frequency त्यसपछि; verify छ in phrase-like token",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "t",
+          "y",
+          "ax",
+          "s",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "tsh",
+          "i"
+        ],
+        "phoneString": "t y ax s . p ax . tsh i",
+        "espeakPayload": "[[t j V s p V ts h i]]",
+        "audio": "/samples/57_त्यसपछि_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "t",
+          "y",
+          "ax",
+          "s",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "chh",
+          "i"
+        ],
+        "phoneString": "t y ax s . p ax . chh i",
+        "espeakPayload": "[[t j V s p V tS h i]]",
+        "audio": "/samples/57_त्यसपछि_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "58_गरेपछि",
+      "text": "गरेपछि",
+      "focus": "postposition_chh",
+      "why": "rule-path भएपछि/पछि form; verify fallback quality",
+      "old": {
+        "label": "Existing G2P",
+        "source": "g2p_rule",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          "e",
+          "p",
+          "ax",
+          "tsh",
+          "i"
+        ],
+        "phoneString": "g ax r e p ax tsh i",
+        "espeakPayload": "[[g V r e: p V ts h i]]",
+        "audio": "/samples/58_गरेपछि_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "g2p_rule",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          "e",
+          "p",
+          "ax",
+          "chh",
+          "i"
+        ],
+        "phoneString": "g ax r e p ax chh i",
+        "espeakPayload": "[[g V r e: p V tS h i]]",
+        "audio": "/samples/58_गरेपछि_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "59_अझै",
+      "text": "अझै",
+      "focus": "jh",
+      "why": "झ in अझै; verify झ target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ax",
+          ".",
+          "dzh",
+          "axj"
+        ],
+        "phoneString": "ax . dzh axj",
+        "espeakPayload": "[[V dz h VI]]",
+        "audio": "/samples/59_अझै_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ax",
+          ".",
+          "jh",
+          "axj"
+        ],
+        "phoneString": "ax . jh axj",
+        "espeakPayload": "[[V dZ h VI]]",
+        "audio": "/samples/59_अझै_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "60_बताउँछन्",
+      "text": "बताउँछन्",
+      "focus": "verb_final_chh",
+      "why": "-छन् after nasalized vowel; verify final छ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "t",
+          "aaw",
+          "n",
+          ".",
+          "tsh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "b ax . t aaw n . tsh ax n",
+        "espeakPayload": "[[b V t aU n ts h V n]]",
+        "audio": "/samples/60_बताउँछन्_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "t",
+          "aaw",
+          "n",
+          ".",
+          "chh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "b ax . t aaw n . chh ax n",
+        "espeakPayload": "[[b V t aU n tS h V n]]",
+        "audio": "/samples/60_बताउँछन्_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "61_सक्छ",
+      "text": "सक्छ",
+      "focus": "verb_final_chh",
+      "why": "compact सक्छ cluster; verify क्छ realization",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "k",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "s ax k . tsh ax",
+        "espeakPayload": "[[s V k ts h V]]",
+        "audio": "/samples/61_सक्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "k",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "s ax k . chh ax",
+        "espeakPayload": "[[s V k tS h V]]",
+        "audio": "/samples/61_सक्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "62_सुझाव",
+      "text": "सुझाव",
+      "focus": "jh",
+      "why": "झ in सुझाव; verify voiced aspirated affricate target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "u",
+          ".",
+          "dzh",
+          "aa",
+          "b"
+        ],
+        "phoneString": "s u . dzh aa b",
+        "espeakPayload": "[[s u dz h a: b]]",
+        "audio": "/samples/62_सुझाव_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "u",
+          ".",
+          "jh",
+          "aa",
+          "b"
+        ],
+        "phoneString": "s u . jh aa b",
+        "espeakPayload": "[[s u dZ h a: b]]",
+        "audio": "/samples/62_सुझाव_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "63_सम्झौता",
+      "text": "सम्झौता",
+      "focus": "jh",
+      "why": "म्झ cluster; verify झ after nasal context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "m",
+          ".",
+          "dzh",
+          "axw",
+          ".",
+          "t",
+          "aa"
+        ],
+        "phoneString": "s ax m . dzh axw . t aa",
+        "espeakPayload": "[[s V m dz h VU t a:]]",
+        "audio": "/samples/63_सम्झौता_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "m",
+          ".",
+          "jh",
+          "axw",
+          ".",
+          "t",
+          "aa"
+        ],
+        "phoneString": "s ax m . jh axw . t aa",
+        "espeakPayload": "[[s V m dZ h VU t a:]]",
+        "audio": "/samples/63_सम्झौता_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "64_बजे",
+      "text": "बजे",
+      "focus": "medial_j",
+      "why": "common time word; verify ज before ए",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "dz",
+          "e"
+        ],
+        "phoneString": "b ax . dz e",
+        "espeakPayload": "[[b V dz e:]]",
+        "audio": "/samples/64_बजे_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "j",
+          "e"
+        ],
+        "phoneString": "b ax . j e",
+        "espeakPayload": "[[b V dZ e:]]",
+        "audio": "/samples/64_बजे_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "65_जुन",
+      "text": "जुन",
+      "focus": "initial_j",
+      "why": "common जुन; verify short ज onset before उ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "u",
+          "n"
+        ],
+        "phoneString": "dz u n",
+        "espeakPayload": "[[dz u n]]",
+        "audio": "/samples/65_जुन_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "u",
+          "n"
+        ],
+        "phoneString": "j u n",
+        "espeakPayload": "[[dZ u n]]",
+        "audio": "/samples/65_जुन_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "66_निजी",
+      "text": "निजी",
+      "focus": "medial_j",
+      "why": "common निजी; verify intervocalic ज",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          ".",
+          "dz",
+          "i"
+        ],
+        "phoneString": "n i . dz i",
+        "espeakPayload": "[[n i dz i]]",
+        "audio": "/samples/66_निजी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          ".",
+          "j",
+          "i"
+        ],
+        "phoneString": "n i . j i",
+        "espeakPayload": "[[n i dZ i]]",
+        "audio": "/samples/66_निजी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "67_छौं",
+      "text": "छौं",
+      "focus": "orthographic_variant",
+      "why": "छौं spelling; compare with छौँ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "g2p_rule",
+        "phones": [
+          "tsh",
+          "axwn"
+        ],
+        "phoneString": "tsh axwn",
+        "espeakPayload": "[[ts h VU~]]",
+        "audio": "/samples/67_छौं_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "g2p_rule",
+        "phones": [
+          "chh",
+          "axwn"
+        ],
+        "phoneString": "chh axwn",
+        "espeakPayload": "[[tS h VU~]]",
+        "audio": "/samples/67_छौं_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "68_निर्वाचनमा",
+      "text": "निर्वाचनमा",
+      "focus": "suffix_affricate",
+      "why": "निर्वाचन plus मा; verify suffix does not change च target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          ".",
+          "r",
+          "w",
+          "aa",
+          ".",
+          "ts",
+          "ax",
+          "n",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "n i . r w aa . ts ax n . m aa",
+        "espeakPayload": "[[n i r w a: ts V n m a:]]",
+        "audio": "/samples/68_निर्वाचनमा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          ".",
+          "r",
+          "w",
+          "aa",
+          ".",
+          "ch",
+          "ax",
+          "n",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "n i . r w aa . ch ax n . m aa",
+        "espeakPayload": "[[n i r w a: tS V n m a:]]",
+        "audio": "/samples/68_निर्वाचनमा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "69_बजारमा",
+      "text": "बजारमा",
+      "focus": "suffix_affricate",
+      "why": "बजार plus मा; verify ज in inflected word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "dz",
+          "aa",
+          "r",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "b ax . dz aa r . m aa",
+        "espeakPayload": "[[b V dz a: r m a:]]",
+        "audio": "/samples/69_बजारमा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "j",
+          "aa",
+          "r",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "b ax . j aa r . m aa",
+        "espeakPayload": "[[b V dZ a: r m a:]]",
+        "audio": "/samples/69_बजारमा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "70_निर्वाचित",
+      "text": "निर्वाचित",
+      "focus": "medial_ch",
+      "why": "निर्वाचित; च before इ may expose target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          "r",
+          ".",
+          "b",
+          "aa",
+          ".",
+          "ts",
+          "i",
+          "t"
+        ],
+        "phoneString": "n i r . b aa . ts i t",
+        "espeakPayload": "[[n i r b a: ts i t]]",
+        "audio": "/samples/70_निर्वाचित_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "n",
+          "i",
+          "r",
+          ".",
+          "b",
+          "aa",
+          ".",
+          "ch",
+          "i",
+          "t"
+        ],
+        "phoneString": "n i r . b aa . ch i t",
+        "espeakPayload": "[[n i r b a: tS i t]]",
+        "audio": "/samples/70_निर्वाचित_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "71_पराजित",
+      "text": "पराजित",
+      "focus": "medial_j",
+      "why": "पराजित; ज before इ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "r",
+          "aa",
+          ".",
+          "dz",
+          "i",
+          "t"
+        ],
+        "phoneString": "p ax . r aa . dz i t",
+        "espeakPayload": "[[p V r a: dz i t]]",
+        "audio": "/samples/71_पराजित_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "r",
+          "aa",
+          ".",
+          "j",
+          "i",
+          "t"
+        ],
+        "phoneString": "p ax . r aa . j i t",
+        "espeakPayload": "[[p V r a: dZ i t]]",
+        "audio": "/samples/71_पराजित_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "72_जेठ",
+      "text": "जेठ",
+      "focus": "initial_j",
+      "why": "common month जेठ; verify ज before ए",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "e",
+          "txh"
+        ],
+        "phoneString": "dz e txh",
+        "espeakPayload": "[[dz e: t.#]]",
+        "audio": "/samples/72_जेठ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "e",
+          "txh"
+        ],
+        "phoneString": "j e txh",
+        "espeakPayload": "[[dZ e: t.#]]",
+        "audio": "/samples/72_जेठ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "73_छु",
+      "text": "छु",
+      "focus": "verb_final_chh",
+      "why": "first-person छु; very short छ sample",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "u"
+        ],
+        "phoneString": "tsh u",
+        "espeakPayload": "[[ts h u]]",
+        "audio": "/samples/73_छु_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "u"
+        ],
+        "phoneString": "chh u",
+        "espeakPayload": "[[tS h u]]",
+        "audio": "/samples/73_छु_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "74_जस्तो",
+      "text": "जस्तो",
+      "focus": "initial_j",
+      "why": "common जस्तो; verify ज before schwa",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          "s",
+          ".",
+          "t",
+          "o"
+        ],
+        "phoneString": "dz ax s . t o",
+        "espeakPayload": "[[dz V s t o:]]",
+        "audio": "/samples/74_जस्तो_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          "s",
+          ".",
+          "t",
+          "o"
+        ],
+        "phoneString": "j ax s . t o",
+        "espeakPayload": "[[dZ V s t o:]]",
+        "audio": "/samples/74_जस्तो_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "75_सहज",
+      "text": "सहज",
+      "focus": "final_j",
+      "why": "final ज in सहज; verify final voiced affricate target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "h",
+          "ax",
+          "dz"
+        ],
+        "phoneString": "s ax . h ax dz",
+        "espeakPayload": "[[s V h V dz]]",
+        "audio": "/samples/75_सहज_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "h",
+          "ax",
+          "j"
+        ],
+        "phoneString": "s ax . h ax j",
+        "espeakPayload": "[[s V h V dZ]]",
+        "audio": "/samples/75_सहज_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "76_गर्छ",
+      "text": "गर्छ",
+      "focus": "verb_final_chh",
+      "why": "common गर्छ; verify final छ after र्छ cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "g ax r . tsh ax",
+        "espeakPayload": "[[g V r ts h V]]",
+        "audio": "/samples/76_गर्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "g ax r . chh ax",
+        "espeakPayload": "[[g V r tS h V]]",
+        "audio": "/samples/76_गर्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "77_बजार",
+      "text": "बजार",
+      "focus": "medial_j",
+      "why": "common बजार; verify ज after schwa",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "dz",
+          "aa",
+          "r"
+        ],
+        "phoneString": "b ax . dz aa r",
+        "espeakPayload": "[[b V dz a: r]]",
+        "audio": "/samples/77_बजार_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "j",
+          "aa",
+          "r"
+        ],
+        "phoneString": "b ax . j aa r",
+        "espeakPayload": "[[b V dZ a: r]]",
+        "audio": "/samples/77_बजार_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "78_छौँ",
+      "text": "छौँ",
+      "focus": "orthographic_variant",
+      "why": "छौँ spelling; compare with छौं",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "axwn"
+        ],
+        "phoneString": "tsh axwn",
+        "espeakPayload": "[[ts h VU~]]",
+        "audio": "/samples/78_छौँ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "axwn"
+        ],
+        "phoneString": "chh axwn",
+        "espeakPayload": "[[tS h VU~]]",
+        "audio": "/samples/78_छौँ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "79_जनता",
+      "text": "जनता",
+      "focus": "initial_j",
+      "why": "common जनता; verify ज before schwa",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          "n",
+          ".",
+          "t",
+          "aa"
+        ],
+        "phoneString": "dz ax n . t aa",
+        "espeakPayload": "[[dz V n t a:]]",
+        "audio": "/samples/79_जनता_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          "n",
+          ".",
+          "t",
+          "aa"
+        ],
+        "phoneString": "j ax n . t aa",
+        "espeakPayload": "[[dZ V n t a:]]",
+        "audio": "/samples/79_जनता_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "80_जिम्मेवारी",
+      "text": "जिम्मेवारी",
+      "focus": "geminate_j",
+      "why": "जिम्मेवारी; verify ज plus gemination-like context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "g2p_rule",
+        "phones": [
+          "dz",
+          "i",
+          "m:",
+          "e",
+          "w",
+          "aa",
+          "r",
+          "i"
+        ],
+        "phoneString": "dz i m: e w aa r i",
+        "espeakPayload": "[[dz i m m e: w a: r i]]",
+        "audio": "/samples/80_जिम्मेवारी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "g2p_rule",
+        "phones": [
+          "j",
+          "i",
+          "m:",
+          "e",
+          "w",
+          "aa",
+          "r",
+          "i"
+        ],
+        "phoneString": "j i m: e w aa r i",
+        "espeakPayload": "[[dZ i m m e: w a: r i]]",
+        "audio": "/samples/80_जिम्मेवारी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "81_जित",
+      "text": "जित",
+      "focus": "initial_j",
+      "why": "short जित; verify ज before इ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "i",
+          "t"
+        ],
+        "phoneString": "dz i t",
+        "espeakPayload": "[[dz i t]]",
+        "audio": "/samples/81_जित_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "i",
+          "t"
+        ],
+        "phoneString": "j i t",
+        "espeakPayload": "[[dZ i t]]",
+        "audio": "/samples/81_जित_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "82_जोड",
+      "text": "जोड",
+      "focus": "initial_j",
+      "why": "short जोड; verify ज before ओ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "o",
+          "dx"
+        ],
+        "phoneString": "dz o dx",
+        "espeakPayload": "[[dz o: d.]]",
+        "audio": "/samples/82_जोड_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "o",
+          "dx"
+        ],
+        "phoneString": "j o dx",
+        "espeakPayload": "[[dZ o: d.]]",
+        "audio": "/samples/82_जोड_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "83_भन्छन्",
+      "text": "भन्छन्",
+      "focus": "verb_final_chh",
+      "why": "भन्छन्; verify छ after nasal",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "bh",
+          "ax",
+          "n",
+          ".",
+          "tsh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "bh ax n . tsh ax n",
+        "espeakPayload": "[[b# V n ts h V n]]",
+        "audio": "/samples/83_भन्छन्_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "bh",
+          "ax",
+          "n",
+          ".",
+          "chh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "bh ax n . chh ax n",
+        "espeakPayload": "[[b# V n tS h V n]]",
+        "audio": "/samples/83_भन्छन्_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "84_कर्मचारी",
+      "text": "कर्मचारी",
+      "focus": "medial_ch",
+      "why": "common कर्मचारी; च before आ in occupational word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "k",
+          "ax",
+          "r",
+          ".",
+          "m",
+          "ax",
+          ".",
+          "ts",
+          "aa",
+          ".",
+          "r",
+          "i"
+        ],
+        "phoneString": "k ax r . m ax . ts aa . r i",
+        "espeakPayload": "[[k V r m V ts a: r i]]",
+        "audio": "/samples/84_कर्मचारी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "k",
+          "ax",
+          "r",
+          ".",
+          "m",
+          "ax",
+          ".",
+          "ch",
+          "aa",
+          ".",
+          "r",
+          "i"
+        ],
+        "phoneString": "k ax r . m ax . ch aa . r i",
+        "espeakPayload": "[[k V r m V tS a: r i]]",
+        "audio": "/samples/84_कर्मचारी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "85_ज्यान",
+      "text": "ज्यान",
+      "focus": "cluster_j",
+      "why": "ज्य cluster; verify palatal glide interaction",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "y",
+          "aa",
+          "n"
+        ],
+        "phoneString": "dz y aa n",
+        "espeakPayload": "[[dz j a: n]]",
+        "audio": "/samples/85_ज्यान_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "y",
+          "aa",
+          "n"
+        ],
+        "phoneString": "j y aa n",
+        "espeakPayload": "[[dZ j a: n]]",
+        "audio": "/samples/85_ज्यान_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "86_प्रचण्ड",
+      "text": "प्रचण्ड",
+      "focus": "cluster_ch",
+      "why": "प्रचण्ड; च after र cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "r",
+          "ax",
+          ".",
+          "ts",
+          "ax",
+          "n",
+          ".",
+          "dx",
+          "ax"
+        ],
+        "phoneString": "p r ax . ts ax n . dx ax",
+        "espeakPayload": "[[p r V ts V n d. V]]",
+        "audio": "/samples/86_प्रचण्ड_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "r",
+          "ax",
+          ".",
+          "ch",
+          "ax",
+          "n",
+          ".",
+          "dx",
+          "ax"
+        ],
+        "phoneString": "p r ax . ch ax n . dx ax",
+        "espeakPayload": "[[p r V tS V n d. V]]",
+        "audio": "/samples/86_प्रचण्ड_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "87_सर्वोच्च",
+      "text": "सर्वोच्च",
+      "focus": "geminate_ch",
+      "why": "सर्वोच्च; च्च cluster in formal word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "r",
+          ".",
+          "b",
+          "o",
+          "ts",
+          ".",
+          "ts",
+          "ax"
+        ],
+        "phoneString": "s ax r . b o ts . ts ax",
+        "espeakPayload": "[[s V r b o: ts ts V]]",
+        "audio": "/samples/87_सर्वोच्च_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "r",
+          ".",
+          "b",
+          "o",
+          "ch",
+          ".",
+          "ch",
+          "ax"
+        ],
+        "phoneString": "s ax r . b o ch . ch ax",
+        "espeakPayload": "[[s V r b o: tS tS V]]",
+        "audio": "/samples/87_सर्वोच्च_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "88_छानबिन",
+      "text": "छानबिन",
+      "focus": "initial_chh",
+      "why": "छानबिन; verify aspirated छ before आ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "aa",
+          "n",
+          ".",
+          "b",
+          "i",
+          "n"
+        ],
+        "phoneString": "tsh aa n . b i n",
+        "espeakPayload": "[[ts h a: n b i n]]",
+        "audio": "/samples/88_छानबिन_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "aa",
+          "n",
+          ".",
+          "b",
+          "i",
+          "n"
+        ],
+        "phoneString": "chh aa n . b i n",
+        "espeakPayload": "[[tS h a: n b i n]]",
+        "audio": "/samples/88_छानबिन_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "89_समाचार",
+      "text": "समाचार",
+      "focus": "medial_ch",
+      "why": "common समाचार; verify च before आ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "m",
+          "aa",
+          ".",
+          "ts",
+          "aa",
+          "r"
+        ],
+        "phoneString": "s ax . m aa . ts aa r",
+        "espeakPayload": "[[s V m a: ts a: r]]",
+        "audio": "/samples/89_समाचार_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "m",
+          "aa",
+          ".",
+          "ch",
+          "aa",
+          "r"
+        ],
+        "phoneString": "s ax . m aa . ch aa r",
+        "espeakPayload": "[[s V m a: tS a: r]]",
+        "audio": "/samples/89_समाचार_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "90_गर्छन्",
+      "text": "गर्छन्",
+      "focus": "verb_final_chh",
+      "why": "plural गर्छन्; verify र्छन् cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          ".",
+          "tsh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "g ax r . tsh ax n",
+        "espeakPayload": "[[g V r ts h V n]]",
+        "audio": "/samples/90_गर्छन्_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          ".",
+          "chh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "g ax r . chh ax n",
+        "espeakPayload": "[[g V r tS h V n]]",
+        "audio": "/samples/90_गर्छन्_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "91_गर्नुपर्छ",
+      "text": "गर्नुपर्छ",
+      "focus": "verb_final_chh",
+      "why": "high-frequency पर्छ ending in longer word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          ".",
+          "n",
+          "u",
+          ".",
+          "p",
+          "ax",
+          "r",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "g ax r . n u . p ax r . tsh ax",
+        "espeakPayload": "[[g V r n u p V r ts h V]]",
+        "audio": "/samples/91_गर्नुपर्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          "r",
+          ".",
+          "n",
+          "u",
+          ".",
+          "p",
+          "ax",
+          "r",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "g ax r . n u . p ax r . chh ax",
+        "espeakPayload": "[[g V r n u p V r tS h V]]",
+        "audio": "/samples/91_गर्नुपर्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "92_पर्छ",
+      "text": "पर्छ",
+      "focus": "verb_final_chh",
+      "why": "compact पर्छ; verify final छ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          "r",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "p ax r . tsh ax",
+        "espeakPayload": "[[p V r ts h V]]",
+        "audio": "/samples/92_पर्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          "r",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "p ax r . chh ax",
+        "espeakPayload": "[[p V r tS h V]]",
+        "audio": "/samples/92_पर्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "93_जनालाई",
+      "text": "जनालाई",
+      "focus": "suffix_affricate",
+      "why": "जना plus लाई suffix strip; verify suffix path",
+      "old": {
+        "label": "Existing G2P",
+        "source": "suffix_strip",
+        "phones": [
+          "dz",
+          "ax",
+          ".",
+          "n",
+          "aa",
+          ".",
+          "l",
+          "aaj"
+        ],
+        "phoneString": "dz ax . n aa . l aaj",
+        "espeakPayload": "[[dz V n a: l aI]]",
+        "audio": "/samples/93_जनालाई_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "suffix_strip",
+        "phones": [
+          "j",
+          "ax",
+          ".",
+          "n",
+          "aa",
+          ".",
+          "l",
+          "aaj"
+        ],
+        "phoneString": "j ax . n aa . l aaj",
+        "espeakPayload": "[[dZ V n a: l aI]]",
+        "audio": "/samples/93_जनालाई_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "94_आजको",
+      "text": "आजको",
+      "focus": "suffix_affricate",
+      "why": "आज plus को; verify ज in suffixed word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "aa",
+          ".",
+          "dz",
+          "ax",
+          ".",
+          "k",
+          "o"
+        ],
+        "phoneString": "aa . dz ax . k o",
+        "espeakPayload": "[[a: dz V k o:]]",
+        "audio": "/samples/94_आजको_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "aa",
+          ".",
+          "j",
+          "ax",
+          ".",
+          "k",
+          "o"
+        ],
+        "phoneString": "aa . j ax . k o",
+        "espeakPayload": "[[a: dZ V k o:]]",
+        "audio": "/samples/94_आजको_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "95_जीवन",
+      "text": "जीवन",
+      "focus": "initial_j",
+      "why": "common जीवन; verify ज before ई",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "i",
+          ".",
+          "b",
+          "ax",
+          "n"
+        ],
+        "phoneString": "dz i . b ax n",
+        "espeakPayload": "[[dz i b V n]]",
+        "audio": "/samples/95_जीवन_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "i",
+          ".",
+          "b",
+          "ax",
+          "n"
+        ],
+        "phoneString": "j i . b ax n",
+        "espeakPayload": "[[dZ i b V n]]",
+        "audio": "/samples/95_जीवन_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "96_चिनियाँ",
+      "text": "चिनियाँ",
+      "focus": "initial_ch",
+      "why": "common चिनियाँ; verify च before इ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "i",
+          ".",
+          "n",
+          "i",
+          ".",
+          "y",
+          "aan"
+        ],
+        "phoneString": "ts i . n i . y aan",
+        "espeakPayload": "[[ts i n i j a:~]]",
+        "audio": "/samples/96_चिनियाँ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "i",
+          ".",
+          "n",
+          "i",
+          ".",
+          "y",
+          "aan"
+        ],
+        "phoneString": "ch i . n i . y aan",
+        "espeakPayload": "[[tS i n i j a:~]]",
+        "audio": "/samples/96_चिनियाँ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "97_विजयी",
+      "text": "विजयी",
+      "focus": "medial_j",
+      "why": "विजयी; verify ज before य",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "i",
+          ".",
+          "dz",
+          "ax",
+          ".",
+          "y",
+          "i"
+        ],
+        "phoneString": "b i . dz ax . y i",
+        "espeakPayload": "[[b i dz V j i]]",
+        "audio": "/samples/97_विजयी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "i",
+          ".",
+          "j",
+          "ax",
+          ".",
+          "y",
+          "i"
+        ],
+        "phoneString": "b i . j ax . y i",
+        "espeakPayload": "[[b i dZ V j i]]",
+        "audio": "/samples/97_विजयी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "98_चुनाव",
+      "text": "चुनाव",
+      "focus": "initial_ch",
+      "why": "common चुनाव; verify च before उ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "u",
+          ".",
+          "n",
+          "aa",
+          "w"
+        ],
+        "phoneString": "ts u . n aa w",
+        "espeakPayload": "[[ts u n a: w]]",
+        "audio": "/samples/98_चुनाव_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "u",
+          ".",
+          "n",
+          "aa",
+          "w"
+        ],
+        "phoneString": "ch u . n aa w",
+        "espeakPayload": "[[tS u n a: w]]",
+        "audio": "/samples/98_चुनाव_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "99_जोखिम",
+      "text": "जोखिम",
+      "focus": "initial_j",
+      "why": "common जोखिम; verify ज before ओ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "o",
+          ".",
+          "kh",
+          "i",
+          "m"
+        ],
+        "phoneString": "dz o . kh i m",
+        "espeakPayload": "[[dz o: k# i m]]",
+        "audio": "/samples/99_जोखिम_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "o",
+          ".",
+          "kh",
+          "i",
+          "m"
+        ],
+        "phoneString": "j o . kh i m",
+        "espeakPayload": "[[dZ o: k# i m]]",
+        "audio": "/samples/99_जोखिम_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "100_चरणमा",
+      "text": "चरणमा",
+      "focus": "suffix_affricate",
+      "why": "चरण plus मा; verify च in inflected form",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "ax",
+          ".",
+          "r",
+          "ax",
+          "n",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "ts ax . r ax n . m aa",
+        "espeakPayload": "[[ts V r V n m a:]]",
+        "audio": "/samples/100_चरणमा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "ax",
+          ".",
+          "r",
+          "ax",
+          "n",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "ch ax . r ax n . m aa",
+        "espeakPayload": "[[tS V r V n m a:]]",
+        "audio": "/samples/100_चरणमा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "101_जस्ता",
+      "text": "जस्ता",
+      "focus": "initial_j",
+      "why": "plural/comparison जस्ता; verify ज before schwa",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          "s",
+          ".",
+          "t",
+          "aa"
+        ],
+        "phoneString": "dz ax s . t aa",
+        "espeakPayload": "[[dz V s t a:]]",
+        "audio": "/samples/101_जस्ता_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          "s",
+          ".",
+          "t",
+          "aa"
+        ],
+        "phoneString": "j ax s . t aa",
+        "espeakPayload": "[[dZ V s t a:]]",
+        "audio": "/samples/101_जस्ता_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "102_आयोजित",
+      "text": "आयोजित",
+      "focus": "medial_j",
+      "why": "आयोजित; verify ज before इ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "aa",
+          ".",
+          "y",
+          "o",
+          ".",
+          "dz",
+          "i",
+          "t"
+        ],
+        "phoneString": "aa . y o . dz i t",
+        "espeakPayload": "[[a: j o: dz i t]]",
+        "audio": "/samples/102_आयोजित_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "aa",
+          ".",
+          "y",
+          "o",
+          ".",
+          "j",
+          "i",
+          "t"
+        ],
+        "phoneString": "aa . y o . j i t",
+        "espeakPayload": "[[a: j o: dZ i t]]",
+        "audio": "/samples/102_आयोजित_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "103_हुन्छन्",
+      "text": "हुन्छन्",
+      "focus": "verb_final_chh",
+      "why": "plural हुन्छन्; verify final छ before न्",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "u",
+          "n",
+          ".",
+          "tsh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "h u n . tsh ax n",
+        "espeakPayload": "[[h u n ts h V n]]",
+        "audio": "/samples/103_हुन्छन्_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "h",
+          "u",
+          "n",
+          ".",
+          "chh",
+          "ax",
+          "n"
+        ],
+        "phoneString": "h u n . chh ax n",
+        "espeakPayload": "[[h u n tS h V n]]",
+        "audio": "/samples/103_हुन्छन्_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "104_राजनीति",
+      "text": "राजनीति",
+      "focus": "medial_j",
+      "why": "राजनीति; verify राज- without following क",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "dz",
+          ".",
+          "n",
+          "i",
+          ".",
+          "t",
+          "i"
+        ],
+        "phoneString": "r aa dz . n i . t i",
+        "espeakPayload": "[[r a: dz n i t i]]",
+        "audio": "/samples/104_राजनीति_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "j",
+          ".",
+          "n",
+          "i",
+          ".",
+          "t",
+          "i"
+        ],
+        "phoneString": "r aa j . n i . t i",
+        "espeakPayload": "[[r a: dZ n i t i]]",
+        "audio": "/samples/104_राजनीति_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "105_गरिन्छ",
+      "text": "गरिन्छ",
+      "focus": "verb_final_chh",
+      "why": "गरिन्छ; verify final छ in passive form",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          ".",
+          "r",
+          "i",
+          "n",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "g ax . r i n . tsh ax",
+        "espeakPayload": "[[g V r i n ts h V]]",
+        "audio": "/samples/105_गरिन्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "g",
+          "ax",
+          ".",
+          "r",
+          "i",
+          "n",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "g ax . r i n . chh ax",
+        "espeakPayload": "[[g V r i n tS h V]]",
+        "audio": "/samples/105_गरिन्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "106_सिर्जना",
+      "text": "सिर्जना",
+      "focus": "medial_j",
+      "why": "सिर्जना; ज after र् cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "i",
+          "r",
+          ".",
+          "dz",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "s i r . dz ax . n aa",
+        "espeakPayload": "[[s i r dz V n a:]]",
+        "audio": "/samples/106_सिर्जना_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "i",
+          "r",
+          ".",
+          "j",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "s i r . j ax . n aa",
+        "espeakPayload": "[[s i r dZ V n a:]]",
+        "audio": "/samples/106_सिर्जना_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "107_जसले",
+      "text": "जसले",
+      "focus": "initial_j",
+      "why": "जसले; verify ज in common pronoun form",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          "s",
+          ".",
+          "l",
+          "e"
+        ],
+        "phoneString": "dz ax s . l e",
+        "espeakPayload": "[[dz V s l e:]]",
+        "audio": "/samples/107_जसले_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          "s",
+          ".",
+          "l",
+          "e"
+        ],
+        "phoneString": "j ax s . l e",
+        "espeakPayload": "[[dZ V s l e:]]",
+        "audio": "/samples/107_जसले_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "108_कमजोर",
+      "text": "कमजोर",
+      "focus": "medial_j",
+      "why": "कमजोर; verify ज before ओ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "k",
+          "ax",
+          "m",
+          ".",
+          "dz",
+          "o",
+          "r"
+        ],
+        "phoneString": "k ax m . dz o r",
+        "espeakPayload": "[[k V m dz o: r]]",
+        "audio": "/samples/108_कमजोर_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "k",
+          "ax",
+          "m",
+          ".",
+          "j",
+          "o",
+          "r"
+        ],
+        "phoneString": "k ax m . j o r",
+        "espeakPayload": "[[k V m dZ o: r]]",
+        "audio": "/samples/108_कमजोर_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "109_राजधानी",
+      "text": "राजधानी",
+      "focus": "medial_j",
+      "why": "राजधानी; verify राज- before ध",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "dz",
+          ".",
+          "dh",
+          "aa",
+          ".",
+          "n",
+          "i"
+        ],
+        "phoneString": "r aa dz . dh aa . n i",
+        "espeakPayload": "[[r a: dz d# a: n i]]",
+        "audio": "/samples/109_राजधानी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "j",
+          ".",
+          "dh",
+          "aa",
+          ".",
+          "n",
+          "i"
+        ],
+        "phoneString": "r aa j . dh aa . n i",
+        "espeakPayload": "[[r a: dZ d# a: n i]]",
+        "audio": "/samples/109_राजधानी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "110_जम्मा",
+      "text": "जम्मा",
+      "focus": "geminate_j",
+      "why": "जम्मा; verify ज plus nasal/geminated म context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          "m",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "dz ax m . m aa",
+        "espeakPayload": "[[dz V m m a:]]",
+        "audio": "/samples/110_जम्मा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          "m",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "j ax m . m aa",
+        "espeakPayload": "[[dZ V m m a:]]",
+        "audio": "/samples/110_जम्मा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "111_साँझ",
+      "text": "साँझ",
+      "focus": "jh",
+      "why": "झ in साँझ with nasalized vowel",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "aan",
+          "dzh"
+        ],
+        "phoneString": "s aan dzh",
+        "espeakPayload": "[[s a:~ dz h]]",
+        "audio": "/samples/111_साँझ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "aan",
+          "jh"
+        ],
+        "phoneString": "s aan jh",
+        "espeakPayload": "[[s a:~ dZ h]]",
+        "audio": "/samples/111_साँझ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "112_प्रचण्डले",
+      "text": "प्रचण्डले",
+      "focus": "suffix_affricate",
+      "why": "प्रचण्ड plus ले; verify suffix-strip path",
+      "old": {
+        "label": "Existing G2P",
+        "source": "suffix_strip",
+        "phones": [
+          "p",
+          "r",
+          "ax",
+          ".",
+          "ts",
+          "ax",
+          "n",
+          ".",
+          "dx",
+          "ax",
+          ".",
+          "l",
+          "e"
+        ],
+        "phoneString": "p r ax . ts ax n . dx ax . l e",
+        "espeakPayload": "[[p r V ts V n d. V l e:]]",
+        "audio": "/samples/112_प्रचण्डले_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "suffix_strip",
+        "phones": [
+          "p",
+          "r",
+          "ax",
+          ".",
+          "ch",
+          "ax",
+          "n",
+          ".",
+          "dx",
+          "ax",
+          ".",
+          "l",
+          "e"
+        ],
+        "phoneString": "p r ax . ch ax n . dx ax . l e",
+        "espeakPayload": "[[p r V tS V n d. V l e:]]",
+        "audio": "/samples/112_प्रचण्डले_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "113_जस्तै",
+      "text": "जस्तै",
+      "focus": "initial_j",
+      "why": "जस्तै; verify ज before diphthong",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          "s",
+          ".",
+          "t",
+          "axj"
+        ],
+        "phoneString": "dz ax s . t axj",
+        "espeakPayload": "[[dz V s t VI]]",
+        "audio": "/samples/113_जस्तै_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          "s",
+          ".",
+          "t",
+          "axj"
+        ],
+        "phoneString": "j ax s . t axj",
+        "espeakPayload": "[[dZ V s t VI]]",
+        "audio": "/samples/113_जस्तै_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "114_चैत",
+      "text": "चैत",
+      "focus": "initial_chh_doubt",
+      "why": "lexicon maps चैत as aspirated; verify with ears",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "axj",
+          "t"
+        ],
+        "phoneString": "tsh axj t",
+        "espeakPayload": "[[ts h VI t]]",
+        "audio": "/samples/114_चैत_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "axj",
+          "t"
+        ],
+        "phoneString": "chh axj t",
+        "espeakPayload": "[[tS h VI t]]",
+        "audio": "/samples/114_चैत_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "115_पहिचान",
+      "text": "पहिचान",
+      "focus": "medial_ch",
+      "why": "पहिचान; च before आ after हि",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "h",
+          "i",
+          ".",
+          "ts",
+          "aa",
+          "n"
+        ],
+        "phoneString": "p ax . h i . ts aa n",
+        "espeakPayload": "[[p V h i ts a: n]]",
+        "audio": "/samples/115_पहिचान_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          ".",
+          "h",
+          "i",
+          ".",
+          "ch",
+          "aa",
+          "n"
+        ],
+        "phoneString": "p ax . h i . ch aa n",
+        "espeakPayload": "[[p V h i tS a: n]]",
+        "audio": "/samples/115_पहिचान_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "116_राजीनामा",
+      "text": "राजीनामा",
+      "focus": "medial_j",
+      "why": "राजीनामा; verify ज before ई",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          ".",
+          "dz",
+          "i",
+          ".",
+          "n",
+          "aa",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "r aa . dz i . n aa . m aa",
+        "espeakPayload": "[[r a: dz i n a: m a:]]",
+        "audio": "/samples/116_राजीनामा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          ".",
+          "j",
+          "i",
+          ".",
+          "n",
+          "aa",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "r aa . j i . n aa . m aa",
+        "espeakPayload": "[[r a: dZ i n a: m a:]]",
+        "audio": "/samples/116_राजीनामा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "117_चलचित्र",
+      "text": "चलचित्र",
+      "focus": "multiple_ch",
+      "why": "चलचित्र has two च positions; verify both targets",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "ax",
+          "l",
+          ".",
+          "ts",
+          "i",
+          "t",
+          ".",
+          "t",
+          "r",
+          "ax"
+        ],
+        "phoneString": "ts ax l . ts i t . t r ax",
+        "espeakPayload": "[[ts V l ts i t t r V]]",
+        "audio": "/samples/117_चलचित्र_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "ax",
+          "l",
+          ".",
+          "ch",
+          "i",
+          "t",
+          ".",
+          "t",
+          "r",
+          "ax"
+        ],
+        "phoneString": "ch ax l . ch i t . t r ax",
+        "espeakPayload": "[[tS V l tS i t t r V]]",
+        "audio": "/samples/117_चलचित्र_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "118_ऊर्जा",
+      "text": "ऊर्जा",
+      "focus": "medial_j",
+      "why": "ऊर्जा; verify ज after र् cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "u",
+          "r",
+          ".",
+          "dz",
+          "aa"
+        ],
+        "phoneString": "u r . dz aa",
+        "espeakPayload": "[[u r dz a:]]",
+        "audio": "/samples/118_ऊर्जा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "u",
+          "r",
+          ".",
+          "j",
+          "aa"
+        ],
+        "phoneString": "u r . j aa",
+        "espeakPayload": "[[u r dZ a:]]",
+        "audio": "/samples/118_ऊर्जा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "119_राज्य",
+      "text": "राज्य",
+      "focus": "cluster_j",
+      "why": "राज्य; verify ज्ज्य-like cluster behavior",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "dz",
+          ".",
+          "dz",
+          "y",
+          "ax"
+        ],
+        "phoneString": "r aa dz . dz y ax",
+        "espeakPayload": "[[r a: dz dz j V]]",
+        "audio": "/samples/119_राज्य_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "j",
+          ".",
+          "j",
+          "y",
+          "ax"
+        ],
+        "phoneString": "r aa j . j y ax",
+        "espeakPayload": "[[r a: dZ dZ j V]]",
+        "audio": "/samples/119_राज्य_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "120_संयोजक",
+      "text": "संयोजक",
+      "focus": "medial_j",
+      "why": "संयोजक; verify ज before क",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "m",
+          ".",
+          "y",
+          "o",
+          ".",
+          "dz",
+          "ax",
+          "k"
+        ],
+        "phoneString": "s ax m . y o . dz ax k",
+        "espeakPayload": "[[s V m j o: dz V k]]",
+        "audio": "/samples/120_संयोजक_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "m",
+          ".",
+          "y",
+          "o",
+          ".",
+          "j",
+          "ax",
+          "k"
+        ],
+        "phoneString": "s ax m . y o . j ax k",
+        "espeakPayload": "[[s V m j o: dZ V k]]",
+        "audio": "/samples/120_संयोजक_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "121_लाग्छ",
+      "text": "लाग्छ",
+      "focus": "verb_final_chh",
+      "why": "लाग्छ; verify ग्छ cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "l",
+          "aa",
+          "g",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "l aa g . tsh ax",
+        "espeakPayload": "[[l a: g ts h V]]",
+        "audio": "/samples/121_लाग्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "l",
+          "aa",
+          "g",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "l aa g . chh ax",
+        "espeakPayload": "[[l a: g tS h V]]",
+        "audio": "/samples/121_लाग्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "122_जवाफ",
+      "text": "जवाफ",
+      "focus": "initial_j",
+      "why": "जवाफ; verify ज plus व interaction",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          ".",
+          "w",
+          "aa",
+          "ph"
+        ],
+        "phoneString": "dz ax . w aa ph",
+        "espeakPayload": "[[dz V w a: p#]]",
+        "audio": "/samples/122_जवाफ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          ".",
+          "w",
+          "aa",
+          "ph"
+        ],
+        "phoneString": "j ax . w aa ph",
+        "espeakPayload": "[[dZ V w a: p#]]",
+        "audio": "/samples/122_जवाफ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "123_महासचिव",
+      "text": "महासचिव",
+      "focus": "medial_ch",
+      "why": "महासचिव; च before इ in compound-like word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "m",
+          "ax",
+          ".",
+          "h",
+          "aa",
+          ".",
+          "s",
+          "ax",
+          ".",
+          "ts",
+          "i",
+          "b"
+        ],
+        "phoneString": "m ax . h aa . s ax . ts i b",
+        "espeakPayload": "[[m V h a: s V ts i b]]",
+        "audio": "/samples/123_महासचिव_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "m",
+          "ax",
+          ".",
+          "h",
+          "aa",
+          ".",
+          "s",
+          "ax",
+          ".",
+          "ch",
+          "i",
+          "b"
+        ],
+        "phoneString": "m ax . h aa . s ax . ch i b",
+        "espeakPayload": "[[m V h a: s V tS i b]]",
+        "audio": "/samples/123_महासचिव_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "124_अझ",
+      "text": "अझ",
+      "focus": "jh",
+      "why": "short अझ; verify झ target without diphthong",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ax",
+          ".",
+          "dzh",
+          "ax"
+        ],
+        "phoneString": "ax . dzh ax",
+        "espeakPayload": "[[V dz h V]]",
+        "audio": "/samples/124_अझ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ax",
+          ".",
+          "jh",
+          "ax"
+        ],
+        "phoneString": "ax . jh ax",
+        "espeakPayload": "[[V dZ h V]]",
+        "audio": "/samples/124_अझ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "125_भ्रष्टाचार",
+      "text": "भ्रष्टाचार",
+      "focus": "medial_ch",
+      "why": "भ्रष्टाचार; च after retroflex cluster context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "bh",
+          "r",
+          "ax",
+          "s",
+          ".",
+          "tx",
+          "aa",
+          ".",
+          "ts",
+          "aa",
+          "r"
+        ],
+        "phoneString": "bh r ax s . tx aa . ts aa r",
+        "espeakPayload": "[[b# r V s t. a: ts a: r]]",
+        "audio": "/samples/125_भ्रष्टाचार_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "bh",
+          "r",
+          "ax",
+          "s",
+          ".",
+          "tx",
+          "aa",
+          ".",
+          "ch",
+          "aa",
+          "r"
+        ],
+        "phoneString": "bh r ax s . tx aa . ch aa r",
+        "espeakPayload": "[[b# r V s t. a: tS a: r]]",
+        "audio": "/samples/125_भ्रष्टाचार_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "126_वाणिज्य",
+      "text": "वाणिज्य",
+      "focus": "cluster_j",
+      "why": "वाणिज्य; ज्ज्य-like cluster from lexicon",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "aa",
+          ".",
+          "n",
+          "i",
+          "dz",
+          ".",
+          "dz",
+          "y",
+          "ax"
+        ],
+        "phoneString": "b aa . n i dz . dz y ax",
+        "espeakPayload": "[[b a: n i dz dz j V]]",
+        "audio": "/samples/126_वाणिज्य_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "aa",
+          ".",
+          "n",
+          "i",
+          "j",
+          ".",
+          "j",
+          "y",
+          "ax"
+        ],
+        "phoneString": "b aa . n i j . j y ax",
+        "espeakPayload": "[[b a: n i dZ dZ j V]]",
+        "audio": "/samples/126_वाणिज्य_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "127_चालु",
+      "text": "चालु",
+      "focus": "initial_ch",
+      "why": "rule-path चालु; verify fallback च target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "g2p_rule",
+        "phones": [
+          "ts",
+          "aa",
+          "l",
+          "u"
+        ],
+        "phoneString": "ts aa l u",
+        "espeakPayload": "[[ts a: l u]]",
+        "audio": "/samples/127_चालु_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "g2p_rule",
+        "phones": [
+          "ch",
+          "aa",
+          "l",
+          "u"
+        ],
+        "phoneString": "ch aa l u",
+        "espeakPayload": "[[tS a: l u]]",
+        "audio": "/samples/127_चालु_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "128_असोज",
+      "text": "असोज",
+      "focus": "final_j",
+      "why": "final ज in असोज",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ax",
+          ".",
+          "s",
+          "o",
+          "dz"
+        ],
+        "phoneString": "ax . s o dz",
+        "espeakPayload": "[[V s o: dz]]",
+        "audio": "/samples/128_असोज_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ax",
+          ".",
+          "s",
+          "o",
+          "j"
+        ],
+        "phoneString": "ax . s o j",
+        "espeakPayload": "[[V s o: dZ]]",
+        "audio": "/samples/128_असोज_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "129_औपचारिक",
+      "text": "औपचारिक",
+      "focus": "medial_ch",
+      "why": "औपचारिक; च after औप context",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "axw",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "ts",
+          "aa",
+          ".",
+          "r",
+          "i",
+          "k"
+        ],
+        "phoneString": "axw . p ax . ts aa . r i k",
+        "espeakPayload": "[[VU p V ts a: r i k]]",
+        "audio": "/samples/129_औपचारिक_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "axw",
+          ".",
+          "p",
+          "ax",
+          ".",
+          "ch",
+          "aa",
+          ".",
+          "r",
+          "i",
+          "k"
+        ],
+        "phoneString": "axw . p ax . ch aa . r i k",
+        "espeakPayload": "[[VU p V tS a: r i k]]",
+        "audio": "/samples/129_औपचारिक_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "130_चितवन",
+      "text": "चितवन",
+      "focus": "initial_ch",
+      "why": "चितवन; common place name with च before इ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "i",
+          ".",
+          "t",
+          "ax",
+          ".",
+          "w",
+          "ax",
+          "n"
+        ],
+        "phoneString": "ts i . t ax . w ax n",
+        "espeakPayload": "[[ts i t V w V n]]",
+        "audio": "/samples/130_चितवन_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "i",
+          ".",
+          "t",
+          "ax",
+          ".",
+          "w",
+          "ax",
+          "n"
+        ],
+        "phoneString": "ch i . t ax . w ax n",
+        "espeakPayload": "[[tS i t V w V n]]",
+        "audio": "/samples/130_चितवन_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "131_संरचना",
+      "text": "संरचना",
+      "focus": "medial_ch",
+      "why": "संरचना; च in formal -चना pattern",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "m",
+          ".",
+          "r",
+          "ax",
+          ".",
+          "ts",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "s ax m . r ax . ts ax . n aa",
+        "espeakPayload": "[[s V m r V ts V n a:]]",
+        "audio": "/samples/131_संरचना_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          "m",
+          ".",
+          "r",
+          "ax",
+          ".",
+          "ch",
+          "ax",
+          ".",
+          "n",
+          "aa"
+        ],
+        "phoneString": "s ax m . r ax . ch ax . n aa",
+        "espeakPayload": "[[s V m r V tS V n a:]]",
+        "audio": "/samples/131_संरचना_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "132_चर्चा",
+      "text": "चर्चा",
+      "focus": "multiple_ch",
+      "why": "चर्चा has initial and final च; verify both",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "ax",
+          "r",
+          ".",
+          "ts",
+          "aa"
+        ],
+        "phoneString": "ts ax r . ts aa",
+        "espeakPayload": "[[ts V r ts a:]]",
+        "audio": "/samples/132_चर्चा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "ax",
+          "r",
+          ".",
+          "ch",
+          "aa"
+        ],
+        "phoneString": "ch ax r . ch aa",
+        "espeakPayload": "[[tS V r tS a:]]",
+        "audio": "/samples/132_चर्चा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "133_जति",
+      "text": "जति",
+      "focus": "initial_j",
+      "why": "जति; verify ज in common quantifier",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dz",
+          "ax",
+          ".",
+          "t",
+          "i"
+        ],
+        "phoneString": "dz ax . t i",
+        "espeakPayload": "[[dz V t i]]",
+        "audio": "/samples/133_जति_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "j",
+          "ax",
+          ".",
+          "t",
+          "i"
+        ],
+        "phoneString": "j ax . t i",
+        "espeakPayload": "[[dZ V t i]]",
+        "audio": "/samples/133_जति_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "134_छोरा",
+      "text": "छोरा",
+      "focus": "initial_chh",
+      "why": "छोरा; छ before ओ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "tsh",
+          "o",
+          ".",
+          "r",
+          "aa"
+        ],
+        "phoneString": "tsh o . r aa",
+        "espeakPayload": "[[ts h o: r a:]]",
+        "audio": "/samples/134_छोरा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "chh",
+          "o",
+          ".",
+          "r",
+          "aa"
+        ],
+        "phoneString": "chh o . r aa",
+        "espeakPayload": "[[tS h o: r a:]]",
+        "audio": "/samples/134_छोरा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "135_पाइन्छ",
+      "text": "पाइन्छ",
+      "focus": "verb_final_chh",
+      "why": "पाइन्छ; verify छ after nasal/diphthong",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "aaj",
+          "n",
+          ".",
+          "tsh",
+          "ax"
+        ],
+        "phoneString": "p aaj n . tsh ax",
+        "espeakPayload": "[[p aI n ts h V]]",
+        "audio": "/samples/135_पाइन्छ_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "aaj",
+          "n",
+          ".",
+          "chh",
+          "ax"
+        ],
+        "phoneString": "p aaj n . chh ax",
+        "espeakPayload": "[[p aI n tS h V]]",
+        "audio": "/samples/135_पाइन्छ_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "136_विचार",
+      "text": "विचार",
+      "focus": "medial_ch",
+      "why": "विचार; च after वि",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "i",
+          ".",
+          "ts",
+          "aa",
+          "r"
+        ],
+        "phoneString": "b i . ts aa r",
+        "espeakPayload": "[[b i ts a: r]]",
+        "audio": "/samples/136_विचार_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "i",
+          ".",
+          "ch",
+          "aa",
+          "r"
+        ],
+        "phoneString": "b i . ch aa r",
+        "espeakPayload": "[[b i tS a: r]]",
+        "audio": "/samples/136_विचार_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "137_राजदूत",
+      "text": "राजदूत",
+      "focus": "medial_j",
+      "why": "राजदूत; verify राज before द",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "dz",
+          ".",
+          "d",
+          "u",
+          "t"
+        ],
+        "phoneString": "r aa dz . d u t",
+        "espeakPayload": "[[r a: dz d u t]]",
+        "audio": "/samples/137_राजदूत_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "r",
+          "aa",
+          "j",
+          ".",
+          "d",
+          "u",
+          "t"
+        ],
+        "phoneString": "r aa j . d u t",
+        "espeakPayload": "[[r a: dZ d u t]]",
+        "audio": "/samples/137_राजदूत_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "138_समाज",
+      "text": "समाज",
+      "focus": "final_j",
+      "why": "final ज in समाज",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "m",
+          "aa",
+          "dz"
+        ],
+        "phoneString": "s ax . m aa dz",
+        "espeakPayload": "[[s V m a: dz]]",
+        "audio": "/samples/138_समाज_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "s",
+          "ax",
+          ".",
+          "m",
+          "aa",
+          "j"
+        ],
+        "phoneString": "s ax . m aa j",
+        "espeakPayload": "[[s V m a: dZ]]",
+        "audio": "/samples/138_समाज_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "139_डिजिटल",
+      "text": "डिजिटल",
+      "focus": "loan_j",
+      "why": "डिजिटल; loan-like ज before ट",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "dx",
+          "i",
+          ".",
+          "dz",
+          "i",
+          ".",
+          "tx",
+          "ax",
+          "l"
+        ],
+        "phoneString": "dx i . dz i . tx ax l",
+        "espeakPayload": "[[d. i dz i t. V l]]",
+        "audio": "/samples/139_डिजिटल_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "dx",
+          "i",
+          ".",
+          "j",
+          "i",
+          ".",
+          "tx",
+          "ax",
+          "l"
+        ],
+        "phoneString": "dx i . j i . tx ax l",
+        "espeakPayload": "[[d. i dZ i t. V l]]",
+        "audio": "/samples/139_डिजिटल_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "140_कर्जा",
+      "text": "कर्जा",
+      "focus": "medial_j",
+      "why": "कर्जा; ज after र्",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "k",
+          "ax",
+          "r",
+          ".",
+          "dz",
+          "aa"
+        ],
+        "phoneString": "k ax r . dz aa",
+        "espeakPayload": "[[k V r dz a:]]",
+        "audio": "/samples/140_कर्जा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "k",
+          "ax",
+          "r",
+          ".",
+          "j",
+          "aa"
+        ],
+        "phoneString": "k ax r . j aa",
+        "espeakPayload": "[[k V r dZ a:]]",
+        "audio": "/samples/140_कर्जा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "141_पश्चिम",
+      "text": "पश्चिम",
+      "focus": "medial_ch",
+      "why": "पश्चिम; च in श्च cluster",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          "s",
+          ".",
+          "ts",
+          "i",
+          "m"
+        ],
+        "phoneString": "p ax s . ts i m",
+        "espeakPayload": "[[p V s ts i m]]",
+        "audio": "/samples/141_पश्चिम_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "ax",
+          "s",
+          ".",
+          "ch",
+          "i",
+          "m"
+        ],
+        "phoneString": "p ax s . ch i m",
+        "espeakPayload": "[[p V s tS i m]]",
+        "audio": "/samples/141_पश्चिम_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "142_पूजा",
+      "text": "पूजा",
+      "focus": "medial_j",
+      "why": "पूजा; ज before आ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "u",
+          ".",
+          "dz",
+          "aa"
+        ],
+        "phoneString": "p u . dz aa",
+        "espeakPayload": "[[p u dz a:]]",
+        "audio": "/samples/142_पूजा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "p",
+          "u",
+          ".",
+          "j",
+          "aa"
+        ],
+        "phoneString": "p u . j aa",
+        "espeakPayload": "[[p u dZ a:]]",
+        "audio": "/samples/142_पूजा_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "143_उजुरी",
+      "text": "उजुरी",
+      "focus": "medial_j",
+      "why": "rule-path उजुरी; verify fallback ज target",
+      "old": {
+        "label": "Existing G2P",
+        "source": "g2p_rule",
+        "phones": [
+          "u",
+          "dz",
+          "u",
+          "r",
+          "i"
+        ],
+        "phoneString": "u dz u r i",
+        "espeakPayload": "[[u dz u r i]]",
+        "audio": "/samples/143_उजुरी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "g2p_rule",
+        "phones": [
+          "u",
+          "j",
+          "u",
+          "r",
+          "i"
+        ],
+        "phoneString": "u j u r i",
+        "espeakPayload": "[[u dZ u r i]]",
+        "audio": "/samples/143_उजुरी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "144_चौथो",
+      "text": "चौथो",
+      "focus": "initial_ch",
+      "why": "चौथो; च before औ diphthong",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "axw",
+          ".",
+          "th",
+          "o"
+        ],
+        "phoneString": "ts axw . th o",
+        "espeakPayload": "[[ts VU t# o:]]",
+        "audio": "/samples/144_चौथो_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "axw",
+          ".",
+          "th",
+          "o"
+        ],
+        "phoneString": "ch axw . th o",
+        "espeakPayload": "[[tS VU t# o:]]",
+        "audio": "/samples/144_चौथो_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "145_चीनको",
+      "text": "चीनको",
+      "focus": "suffix_affricate",
+      "why": "चीन plus को; known /ts i n/ issue with suffix",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "i",
+          "n",
+          ".",
+          "k",
+          "o"
+        ],
+        "phoneString": "ts i n . k o",
+        "espeakPayload": "[[ts i n k o:]]",
+        "audio": "/samples/145_चीनको_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "i",
+          "n",
+          ".",
+          "k",
+          "o"
+        ],
+        "phoneString": "ch i n . k o",
+        "espeakPayload": "[[tS i n k o:]]",
+        "audio": "/samples/145_चीनको_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "146_चुनौती",
+      "text": "चुनौती",
+      "focus": "initial_ch",
+      "why": "rule-path चुनौती; verify च before उ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "g2p_rule",
+        "phones": [
+          "ts",
+          "u",
+          "n",
+          "axw",
+          "t",
+          "i"
+        ],
+        "phoneString": "ts u n axw t i",
+        "espeakPayload": "[[ts u n VU t i]]",
+        "audio": "/samples/146_चुनौती_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "g2p_rule",
+        "phones": [
+          "ch",
+          "u",
+          "n",
+          "axw",
+          "t",
+          "i"
+        ],
+        "phoneString": "ch u n axw t i",
+        "espeakPayload": "[[tS u n VU t i]]",
+        "audio": "/samples/146_चुनौती_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "147_रोजगारी",
+      "text": "रोजगारी",
+      "focus": "medial_j",
+      "why": "rule-path रोजगारी; verify ज before ग",
+      "old": {
+        "label": "Existing G2P",
+        "source": "g2p_rule",
+        "phones": [
+          "r",
+          "o",
+          "dz",
+          "ax",
+          "g",
+          "aa",
+          "r",
+          "i"
+        ],
+        "phoneString": "r o dz ax g aa r i",
+        "espeakPayload": "[[r o: dz V g a: r i]]",
+        "audio": "/samples/147_रोजगारी_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "g2p_rule",
+        "phones": [
+          "r",
+          "o",
+          "j",
+          "ax",
+          "g",
+          "aa",
+          "r",
+          "i"
+        ],
+        "phoneString": "r o j ax g aa r i",
+        "espeakPayload": "[[r o: dZ V g a: r i]]",
+        "audio": "/samples/147_रोजगारी_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "148_बमोजिम",
+      "text": "बमोजिम",
+      "focus": "medial_j",
+      "why": "बमोजिम; verify ज before इ",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "m",
+          "o",
+          ".",
+          "dz",
+          "i",
+          "m"
+        ],
+        "phoneString": "b ax . m o . dz i m",
+        "espeakPayload": "[[b V m o: dz i m]]",
+        "audio": "/samples/148_बमोजिम_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "b",
+          "ax",
+          ".",
+          "m",
+          "o",
+          ".",
+          "j",
+          "i",
+          "m"
+        ],
+        "phoneString": "b ax . m o . j i m",
+        "espeakPayload": "[[b V m o: dZ i m]]",
+        "audio": "/samples/148_बमोजिम_real.wav"
+      },
+      "changed": true
+    },
+    {
+      "id": "149_चुनावमा",
+      "text": "चुनावमा",
+      "focus": "suffix_affricate",
+      "why": "चुनाव plus मा; verify च in inflected word",
+      "old": {
+        "label": "Existing G2P",
+        "source": "lexicon",
+        "phones": [
+          "ts",
+          "u",
+          ".",
+          "n",
+          "aa",
+          "b",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "ts u . n aa b . m aa",
+        "espeakPayload": "[[ts u n a: b m a:]]",
+        "audio": "/samples/149_चुनावमा_old.wav"
+      },
+      "real": {
+        "label": "real_nepali",
+        "source": "lexicon",
+        "phones": [
+          "ch",
+          "u",
+          ".",
+          "n",
+          "aa",
+          "b",
+          ".",
+          "m",
+          "aa"
+        ],
+        "phoneString": "ch u . n aa b . m aa",
+        "espeakPayload": "[[tS u n a: b m a:]]",
+        "audio": "/samples/149_चुनावमा_real.wav"
+      },
+      "changed": true
     }
   ]
 }

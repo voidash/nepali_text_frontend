@@ -30,6 +30,6 @@ npm run dev
 npm run build
 ```
 
-Reviewer choices are stored in browser local storage and can be exported as TSV
-from the UI.
-
+The UI opens on the `changed` filter so the first pass focuses on samples where
+the two G2P profiles actually differ. Reviewer choices are stored in browser
+local storage and can be exported as TSV from the UI.

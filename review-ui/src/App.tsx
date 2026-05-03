@@ -66,7 +66,7 @@ function App() {
   const [data, setData] = useState<ReviewData | null>(null)
   const [selectedId, setSelectedId] = useState("")
   const [query, setQuery] = useState("")
-  const [filter, setFilter] = useState<"all" | "changed" | "pending">("all")
+  const [filter, setFilter] = useState<"all" | "changed" | "pending">("changed")
   const [reviewState, setReviewState] = useState<ReviewState>(() => loadState())
 
   useEffect(() => {
