@@ -41,6 +41,18 @@ Generate review rows:
 python3 tools/emit_review_sheet.py --out review.tsv
 ```
 
+Run Wiktionary sanity checks:
+
+```bash
+python3 tools/compare_wiktionary_ne_ipa.py --source testcases --out /tmp/wiktionary_ne_ipa_testcases.tsv
+python3 tools/compare_wiktionary_ne_ipa.py --source words --out /tmp/wiktionary_review_words.tsv
+```
+
+Interpret the strict Wiktionary score carefully: Wiktionary's `Module:ne-IPA`
+uses `t͡s/t͡sʰ/d͡z/d͡zʱ` for च/छ/ज/झ, so an affricate-sensitive score will prefer
+the old profile. Use the affricate-neutral score to check whether `real_nepali`
+changed anything beyond the intended affricate target.
+
 At minimum, collect native judgments for:
 
 - affricates: `चार`, `छ`, `आज`, `मान्छे`, `चीन`, `सञ्चार`
@@ -101,4 +113,3 @@ that loss can improve while intelligibility and voice consistency remain wrong.
 The intrinsic value of a good TTS voice is intelligibility and clarity, not a
 clever phone inventory. This repo is only ready for production training after
 the pronunciation target passes native review and A/B listening.
-
