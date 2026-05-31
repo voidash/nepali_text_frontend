@@ -11,6 +11,8 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
+from .. import data
+
 
 @dataclass
 class LatinResult:
@@ -180,6 +182,22 @@ def phonemize_latin(text: str) -> LatinResult:
             decisions=[{
                 "type": "code_switch",
                 "rule": "latin_acronym_letter_names",
+                "span": text,
+                "after": " ".join(phones),
+            }],
+        )
+
+    loanwords = data.latin_loanwords()
+    if key in loanwords:
+        phones = list(loanwords[key])
+        return LatinResult(
+            text=text,
+            phones=phones,
+            source="latin_loanword_table",
+            confidence="medium",
+            decisions=[{
+                "type": "code_switch",
+                "rule": "latin_loanword_table",
                 "span": text,
                 "after": " ".join(phones),
             }],

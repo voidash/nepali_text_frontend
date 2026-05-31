@@ -19,6 +19,18 @@ def test_latin_acronym_gets_letter_names():
     assert result.phones == ["e", "aa", "i"]
 
 
+def test_latin_loanword_table_before_rule_fallback():
+    result = phonemize_latin("school")
+    assert result.source == "latin_loanword_table"
+    assert result.phones == ["s", "k", "u", "l"]
+
+
+def test_uppercase_initialism_beats_loanword_table():
+    result = phonemize_latin("A")
+    assert result.source == "latin_acronym"
+    assert result.phones == ["e"]
+
+
 def test_real_nepali_phonemize_text_keeps_latin_spans():
     rows = g2p.phonemize_text("AI ले Facebook मा login गर्यो।")
     by_text = {row.text: row for row in rows}

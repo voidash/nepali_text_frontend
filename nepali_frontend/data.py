@@ -61,6 +61,26 @@ def lexicon_variants() -> dict[str, list[list[str]]]:
     return out
 
 
+@lru_cache(maxsize=1)
+def latin_loanwords() -> dict[str, list[str]]:
+    """Latin spelling → Nepali-English phone tokens.
+
+    This table is used for English/code-mixed spans before rule fallback. The
+    rows are candidate pronunciations and should be treated as reviewable, not
+    as a fully validated English G2P.
+    """
+    out: dict[str, list[str]] = {}
+    for row in _read_tsv(DATA_DIR / "loanwords_latin.tsv"):
+        phones = row.get("phones", "").split()
+        if not phones:
+            continue
+        for field in ("normalized", "text"):
+            key = row.get(field, "").strip().lower()
+            if key and key not in out:
+                out[key] = phones
+    return out
+
+
 def is_phone(p: str) -> bool:
     """True if p is a phone label in the v1.0 inventory."""
     return p in phones() or p == "."
