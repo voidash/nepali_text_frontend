@@ -10,7 +10,7 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from typing import Any
 
-from .code_switch import english
+from .code_switch import english, roman_nepali
 from .g2p import phonemizer as base_phonemizer
 from .normalize import text as text_norm
 from .prosody import chunker
@@ -77,6 +77,7 @@ def process(
     """Run the full frontend over raw text."""
     normalized_text, norm_decisions = text_norm.normalize(text) if normalize else (text, [])
     typed_tokens = tokenizer.tokenize(normalized_text)
+    roman_nepali_spans = _roman_nepali_spans(typed_tokens)
     chunk_objs = chunker.chunk(typed_tokens)
 
     result = FrontendResult(
@@ -98,10 +99,15 @@ def process(
         ],
     )
 
-    for tok in typed_tokens:
+    for token_index, tok in enumerate(typed_tokens):
         if tok.kind == "space":
             continue
-        token_result = _process_token(tok, profile=profile, include_punctuation=include_punctuation)
+        token_result = _process_token(
+            tok,
+            profile=profile,
+            include_punctuation=include_punctuation,
+            roman_nepali_decision=roman_nepali_spans.get(token_index),
+        )
         token_result.id = len(result.tokens)
         result.tokens.append(token_result)
         result.phone_sequence.extend(token_result.phones)
@@ -119,6 +125,7 @@ def _process_token(
     *,
     profile: str,
     include_punctuation: bool,
+    roman_nepali_decision: dict[str, Any] | None = None,
 ) -> TokenResult:
     if tok.kind == "devanagari":
         word = _phonemize_devanagari(tok.text, profile=profile)
@@ -138,9 +145,16 @@ def _process_token(
         )
 
     if tok.kind == "latin":
-        latin = english.phonemize_latin(tok.text)
+        is_roman_nepali = roman_nepali_decision is not None
+        latin = (
+            roman_nepali.phonemize_roman_nepali(tok.text)
+            if is_roman_nepali
+            else english.phonemize_latin(tok.text)
+        )
         phones = _rewrite_for_profile(latin.phones, profile)
         decisions = list(latin.decisions)
+        if roman_nepali_decision is not None:
+            decisions.insert(0, dict(roman_nepali_decision))
         if phones != latin.phones:
             decisions.append({
                 "type": "dialect_profile",
@@ -156,8 +170,8 @@ def _process_token(
             normalized=tok.text,
             span=tok.span,
             kind=tok.kind,
-            language="en",
-            semiotic_class="latin_word",
+            language="ne_roman" if is_roman_nepali else "en",
+            semiotic_class="roman_nepali_word" if is_roman_nepali else "latin_word",
             phones=phones,
             source=latin.source,
             confidence=latin.confidence,
@@ -216,6 +230,32 @@ def _rewrite_for_profile(phones: list[str], profile: str) -> list[str]:
     return [prof.rewrite_phone(phone) for phone in phones]
 
 
+def _roman_nepali_spans(tokens: list[tokenizer.Token]) -> dict[int, dict[str, Any]]:
+    out: dict[int, dict[str, Any]] = {}
+    run: list[tuple[int, tokenizer.Token]] = []
+
+    def flush() -> None:
+        if not run:
+            return
+        classification = roman_nepali.classify_tokens([token.text for _, token in run])
+        if classification.is_roman_nepali:
+            span_text = " ".join(token.text for _, token in run)
+            decision = classification.as_decision(span_text)
+            for token_index, _ in run:
+                out[token_index] = decision
+        run.clear()
+
+    for token_index, token in enumerate(tokens):
+        if token.kind == "latin":
+            run.append((token_index, token))
+            continue
+        if token.kind == "space" and run:
+            continue
+        flush()
+    flush()
+    return out
+
+
 def _warnings_for_token(token: TokenResult) -> list[dict[str, Any]]:
     warnings: list[dict[str, Any]] = []
     if token.status == "needs_review":
@@ -227,7 +267,11 @@ def _warnings_for_token(token: TokenResult) -> list[dict[str, Any]]:
         })
     if token.kind == "latin" and token.confidence == "low":
         warnings.append({
-            "code": "low_confidence_latin",
+            "code": (
+                "low_confidence_roman_nepali"
+                if token.language == "ne_roman"
+                else "low_confidence_latin"
+            ),
             "token_id": token.id,
             "span": token.raw,
         })

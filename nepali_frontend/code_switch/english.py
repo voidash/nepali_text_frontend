@@ -224,6 +224,11 @@ def _looks_like_acronym(text: str) -> bool:
     )
 
 
+def looks_like_acronym(text: str) -> bool:
+    """Public wrapper for other Latin-script code-switch frontends."""
+    return _looks_like_acronym(text)
+
+
 def _letter_name_phones(text: str) -> list[str]:
     out: list[str] = []
     for ch in text:
@@ -240,6 +245,11 @@ def _letter_name_phones(text: str) -> list[str]:
             out.append(".")
         out.extend(phones)
     return out
+
+
+def letter_name_phones(text: str) -> list[str]:
+    """Return Nepali phone labels for spelling a Latin acronym."""
+    return _letter_name_phones(text)
 
 
 def _roman_fallback(text: str) -> list[str]:
@@ -262,3 +272,8 @@ def _roman_fallback(text: str) -> list[str]:
         out.extend(SINGLE_LETTER.get(ch, []))
         i += 1
     return out
+
+
+def fallback_phones(text: str) -> list[str]:
+    """Conservative Latin spelling fallback using Nepali phone labels."""
+    return _roman_fallback(text.lower())

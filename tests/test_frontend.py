@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from nepali_frontend import frontend
 from nepali_frontend.code_switch.english import phonemize_latin
+from nepali_frontend.code_switch.roman_nepali import classify_tokens
 from real_nepali import g2p
 
 
@@ -58,3 +59,32 @@ def test_frontend_url_uses_spoken_parts_not_generic_label():
     token_texts = [token.raw for token in result.tokens]
     assert token_texts[:8] == ["H", "T", "T", "P", "S", "example", "dot", "com"]
     assert "यू" not in token_texts
+
+
+def test_roman_nepali_classifier_marks_user_sentence():
+    result = classify_tokens(["mero", "naam", "aashish", "thapa", "ho"])
+    assert result.is_roman_nepali
+    assert {"mero", "naam", "ho"}.issubset(set(result.markers))
+
+
+def test_frontend_marks_roman_nepali_sentence():
+    result = frontend.process("mero naam aashish thapa ho", profile="real_nepali")
+    latin_tokens = [token for token in result.tokens if token.kind == "latin"]
+    assert [token.raw for token in latin_tokens] == ["mero", "naam", "aashish", "thapa", "ho"]
+    assert {token.language for token in latin_tokens} == {"ne_roman"}
+    assert {token.semiotic_class for token in latin_tokens} == {"roman_nepali_word"}
+    assert {token.source for token in latin_tokens} == {"roman_nepali_table"}
+    assert result.phone_sequence == [
+        "m", "e", ".", "r", "o",
+        "n", "aa", "m",
+        "aa", ".", "s", "i", "s",
+        "th", "aa", ".", "p", "aa",
+        "h", "o",
+    ]
+
+
+def test_english_latin_span_without_nepali_markers_stays_english():
+    result = frontend.process("school computer", profile="real_nepali")
+    latin_tokens = [token for token in result.tokens if token.kind == "latin"]
+    assert {token.language for token in latin_tokens} == {"en"}
+    assert {token.semiotic_class for token in latin_tokens} == {"latin_word"}
