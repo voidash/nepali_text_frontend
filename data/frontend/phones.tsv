@@ -43,6 +43,10 @@ ts	consonant	v1.0	alveolar affricate; was project draft c (Khatiwada 2009)
 tsh	consonant	v1.0	alveolar affricate aspirated; was draft ch
 dz	consonant	v1.0	alveolar affricate voiced; was draft j
 dzh	consonant	v1.0	alveolar affricate breathy-voiced; was draft jh
+ch	consonant	profile	real_nepali clear-profile affricate label for च
+chh	consonant	profile	real_nepali clear-profile aspirated affricate label for छ
+j	consonant	profile	real_nepali clear-profile voiced affricate label for ज
+jh	consonant	profile	real_nepali clear-profile breathy affricate label for झ
 m	consonant	v1.0	bilabial nasal
 n	consonant	v1.0	alveolar nasal; covers ञ ण in default mode (Regmi 2025)
 ng	consonant	v1.0	velar nasal; mostly word-final (Khatiwada 2009)

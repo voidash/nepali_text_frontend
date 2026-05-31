@@ -29,7 +29,20 @@ python3 -m pytest tests/
 For the pronunciation/retraining checklist, see
 [`docs/QUALITY_GATE.md`](docs/QUALITY_GATE.md).
 
+For TTS integration, use the manifest contract in
+[`docs/FRONTEND_CONTRACT.md`](docs/FRONTEND_CONTRACT.md). Training pipelines
+should consume stamped manifests from `python3 -m real_nepali.manifest`, not
+call lower-level G2P functions directly.
+
 ## Try G2P
+
+Full frontend pipeline:
+
+```bash
+python3 -m nepali_frontend normalize "AI ले २५% growth देखायो."
+python3 -m nepali_frontend phonemize "AI ले २५% growth देखायो."
+python3 -m nepali_frontend trace "AI ले २५% growth देखायो."
+```
 
 Original frontend:
 
@@ -47,6 +60,21 @@ Research profile:
 python3 -m real_nepali.g2p "चार छ आज मान्छे चीन"
 ```
 
+Generate and audit a canonical TTS manifest:
+
+```bash
+python3 -m real_nepali.manifest \
+  --in train.tsv \
+  --out train.frontend.tsv \
+  --profile real_nepali
+
+python3 -m real_nepali.manifest \
+  --in train.frontend.tsv \
+  --profile real_nepali \
+  --audit-only \
+  --verify-phones
+```
+
 Generate a native-review TSV:
 
 ```bash
@@ -56,11 +84,18 @@ python3 tools/emit_review_sheet.py --out /tmp/real_nepali_review.tsv
 Run the local listening UI:
 
 ```bash
+python3 tools/generate_frontend_eval_data.py
 python3 tools/generate_review_ui_assets.py
 cd review-ui
 npm install
 npm run dev
 ```
+
+The UI now has two views:
+
+- `Frontend`: raw text, normalized text, token classes, code-switched spans,
+  punctuation phones, chunks, and warnings.
+- `Listening`: fixed-vocoder G2P A/B samples for native review.
 
 ## Research Position
 

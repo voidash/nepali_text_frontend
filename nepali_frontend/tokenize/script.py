@@ -21,7 +21,7 @@ from dataclasses import dataclass
 from ..g2p import base_map as bm
 
 DEVA_RUN = re.compile(r"[ऀ-ॣॲ-ॿ]+")
-LATIN_RUN = re.compile(r"[A-Za-z]+(?:[-'][A-Za-z]+)*")
+LATIN_RUN = re.compile(r"[A-Za-z]+(?:[A-Za-z0-9]*)(?:[-'][A-Za-z0-9]+)*")
 DIGIT_RUN = re.compile(r"[०-९\d]+")
 WHITESPACE_RUN = re.compile(r"\s+")
 

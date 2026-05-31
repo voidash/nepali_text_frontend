@@ -134,6 +134,23 @@ def test_normalize_text_no_change_when_no_digits():
     assert normalize_text(src) == src
 
 
+def test_normalize_text_symbols_and_urls():
+    out = normalize_text("२५% growth https://example.com")
+    assert "पच्चिस प्रतिशत" in out
+    assert "H T T P S example dot com" in out
+    assert "https://" not in out
+
+
+def test_normalize_text_email_spells_address():
+    out = normalize_text("hello@example.com मा पठाऊ")
+    assert out == "hello at example dot com मा पठाऊ"
+
+
+def test_normalize_text_abbreviation_currency():
+    out = normalize_text("डा. रामले रु. २५ तिरे")
+    assert out == "डाक्टर रामले रुपैयाँ पच्चिस तिरे"
+
+
 # ---- tokenizer ----
 
 def test_tokenizer_devanagari_word():

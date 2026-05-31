@@ -1,0 +1,2080 @@
+{
+  "title": "Nepali Text Frontend Audit",
+  "generatedBy": "tools/generate_frontend_eval_data.py",
+  "profile": "real_nepali",
+  "items": [
+    {
+      "id": "code_mix_ai",
+      "category": "code-mix",
+      "input": "AI ले नेपाली TTS राम्रो बनाउँछ।",
+      "normalizedText": "AI ले नेपाली TTS राम्रो बनाउँछ।",
+      "phoneSequence": [
+        "e",
+        "aa",
+        "i",
+        "l",
+        "e",
+        "n",
+        "e",
+        ".",
+        "p",
+        "aa",
+        ".",
+        "l",
+        "i",
+        "t",
+        "i",
+        "t",
+        "i",
+        "e",
+        "s",
+        "r",
+        "aa",
+        "m",
+        ".",
+        "m",
+        "r",
+        "o",
+        "b",
+        "ax",
+        ".",
+        "n",
+        "aaw",
+        "n",
+        ".",
+        "chh",
+        "ax",
+        "sent"
+      ],
+      "tokens": [
+        {
+          "id": 0,
+          "raw": "AI",
+          "normalized": "AI",
+          "span": [
+            0,
+            2
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "e",
+            "aa",
+            "i"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "AI",
+              "after": "e aa i"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "raw": "ले",
+          "normalized": "ले",
+          "span": [
+            3,
+            5
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "l",
+            "e"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "ले",
+              "after": "l e",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "raw": "नेपाली",
+          "normalized": "नेपाली",
+          "span": [
+            6,
+            12
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "n",
+            "e",
+            ".",
+            "p",
+            "aa",
+            ".",
+            "l",
+            "i"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "नेपाली",
+              "after": "n e . p aa . l i",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "raw": "TTS",
+          "normalized": "TTS",
+          "span": [
+            13,
+            16
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "t",
+            "i",
+            "t",
+            "i",
+            "e",
+            "s"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "TTS",
+              "after": "t i t i e s"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "raw": "राम्रो",
+          "normalized": "राम्रो",
+          "span": [
+            17,
+            23
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "r",
+            "aa",
+            "m",
+            ".",
+            "m",
+            "r",
+            "o"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "राम्रो",
+              "after": "r aa m . m r o",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "raw": "बनाउँछ",
+          "normalized": "बनाउँछ",
+          "span": [
+            24,
+            30
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "b",
+            "ax",
+            ".",
+            "n",
+            "aaw",
+            "n",
+            ".",
+            "chh",
+            "ax"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "बनाउँछ",
+              "after": "b ax . n aaw n . tsh ax",
+              "source": "google_ne_lr_2018:candidate"
+            },
+            {
+              "type": "post_rule",
+              "rule": "anusvara_context_lexicon",
+              "before": "aawn . tsh",
+              "after": "aaw n . tsh"
+            },
+            {
+              "type": "dialect_profile",
+              "rule": "clear_standard_affricates",
+              "span": "बनाउँछ",
+              "before": "b ax . n aaw n . tsh ax",
+              "after": "b ax . n aaw n . chh ax",
+              "profile": "standard_clear_nepali"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "raw": "।",
+          "normalized": "।",
+          "span": [
+            30,
+            31
+          ],
+          "kind": "sentence_end",
+          "language": "unknown",
+          "semiotic_class": "punctuation",
+          "phones": [
+            "sent"
+          ],
+          "source": "punctuation",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": []
+        }
+      ],
+      "chunks": [
+        {
+          "id": 0,
+          "token_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "text": "AI ले नेपाली TTS राम्रो बनाउँछ।",
+          "boundary_strength": "sentence",
+          "sentence_type": "declarative",
+          "intonation_hint": "fall",
+          "safe_streaming_break_after": true
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "latin_product_words",
+      "category": "code-mix",
+      "input": "Facebook मा login गरेर post share गर्नुहोस्।",
+      "normalizedText": "Facebook मा login गरेर post share गर्नुहोस्।",
+      "phoneSequence": [
+        "f",
+        "e",
+        "s",
+        "b",
+        "u",
+        "k",
+        "m",
+        "aa",
+        "l",
+        "o",
+        "g",
+        "i",
+        "n",
+        "g",
+        "ax",
+        ".",
+        "r",
+        "e",
+        ".",
+        "r",
+        "ax",
+        "p",
+        "o",
+        "s",
+        "tx",
+        "s",
+        "ax",
+        "r",
+        "e",
+        "g",
+        "ax",
+        "r",
+        ".",
+        "n",
+        "u",
+        ".",
+        "h",
+        "o",
+        "s",
+        "sent"
+      ],
+      "tokens": [
+        {
+          "id": 0,
+          "raw": "Facebook",
+          "normalized": "Facebook",
+          "span": [
+            0,
+            8
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "f",
+            "e",
+            "s",
+            "b",
+            "u",
+            "k"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "Facebook",
+              "after": "f e s b u k"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "raw": "मा",
+          "normalized": "मा",
+          "span": [
+            9,
+            11
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "m",
+            "aa"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "मा",
+              "after": "m aa",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "raw": "login",
+          "normalized": "login",
+          "span": [
+            12,
+            17
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "l",
+            "o",
+            "g",
+            "i",
+            "n"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "login",
+              "after": "l o g i n"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "raw": "गरेर",
+          "normalized": "गरेर",
+          "span": [
+            18,
+            22
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "g",
+            "ax",
+            ".",
+            "r",
+            "e",
+            ".",
+            "r",
+            "ax"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "गरेर",
+              "after": "g ax . r e . r ax",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "raw": "post",
+          "normalized": "post",
+          "span": [
+            23,
+            27
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "p",
+            "o",
+            "s",
+            "tx"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "post",
+              "after": "p o s tx"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "raw": "share",
+          "normalized": "share",
+          "span": [
+            28,
+            33
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "s",
+            "ax",
+            "r",
+            "e"
+          ],
+          "source": "latin_rule_fallback",
+          "confidence": "low",
+          "status": "review",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_rule_fallback_nepali_accent",
+              "span": "share",
+              "after": "s ax r e"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "raw": "गर्नुहोस्",
+          "normalized": "गर्नुहोस्",
+          "span": [
+            34,
+            43
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "g",
+            "ax",
+            "r",
+            ".",
+            "n",
+            "u",
+            ".",
+            "h",
+            "o",
+            "s"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "गर्नुहोस्",
+              "after": "g ax r . n u . h o s",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "raw": "।",
+          "normalized": "।",
+          "span": [
+            43,
+            44
+          ],
+          "kind": "sentence_end",
+          "language": "unknown",
+          "semiotic_class": "punctuation",
+          "phones": [
+            "sent"
+          ],
+          "source": "punctuation",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": []
+        }
+      ],
+      "chunks": [
+        {
+          "id": 0,
+          "token_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "text": "Facebook मा login गरेर post share गर्नुहोस्।",
+          "boundary_strength": "sentence",
+          "sentence_type": "declarative",
+          "intonation_hint": "fall",
+          "safe_streaming_break_after": true
+        }
+      ],
+      "warnings": [
+        {
+          "code": "low_confidence_latin",
+          "token_id": 5,
+          "span": "share"
+        }
+      ]
+    },
+    {
+      "id": "number_percent",
+      "category": "normalization",
+      "input": "आज २५% growth देखियो।",
+      "normalizedText": "आज पच्चिस प्रतिशत growth देखियो।",
+      "phoneSequence": [
+        "aa",
+        ".",
+        "j",
+        "ax",
+        "p",
+        "ax",
+        "ch",
+        ".",
+        "ch",
+        "i",
+        "s",
+        "p",
+        "r",
+        "ax",
+        ".",
+        "t",
+        "i",
+        ".",
+        "s",
+        "ax",
+        "t",
+        "g",
+        "r",
+        "o",
+        "th",
+        "d",
+        "e",
+        ".",
+        "kh",
+        "i",
+        ".",
+        "y",
+        "o",
+        "sent"
+      ],
+      "tokens": [
+        {
+          "id": 0,
+          "raw": "आज",
+          "normalized": "आज",
+          "span": [
+            0,
+            2
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "aa",
+            ".",
+            "j",
+            "ax"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "आज",
+              "after": "aa . dz ax",
+              "source": "google_ne_lr_2018:candidate"
+            },
+            {
+              "type": "dialect_profile",
+              "rule": "clear_standard_affricates",
+              "span": "आज",
+              "before": "aa . dz ax",
+              "after": "aa . j ax",
+              "profile": "standard_clear_nepali"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "raw": "पच्चिस",
+          "normalized": "पच्चिस",
+          "span": [
+            3,
+            9
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "p",
+            "ax",
+            "ch",
+            ".",
+            "ch",
+            "i",
+            "s"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "पच्चिस",
+              "after": "p ax ts . ts i s",
+              "source": "google_ne_lr_2018:candidate"
+            },
+            {
+              "type": "dialect_profile",
+              "rule": "clear_standard_affricates",
+              "span": "पच्चिस",
+              "before": "p ax ts . ts i s",
+              "after": "p ax ch . ch i s",
+              "profile": "standard_clear_nepali"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "raw": "प्रतिशत",
+          "normalized": "प्रतिशत",
+          "span": [
+            10,
+            17
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "p",
+            "r",
+            "ax",
+            ".",
+            "t",
+            "i",
+            ".",
+            "s",
+            "ax",
+            "t"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "प्रतिशत",
+              "after": "p r ax . t i . s ax t",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "raw": "growth",
+          "normalized": "growth",
+          "span": [
+            18,
+            24
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "g",
+            "r",
+            "o",
+            "th"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "growth",
+              "after": "g r o th"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "raw": "देखियो",
+          "normalized": "देखियो",
+          "span": [
+            25,
+            31
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "d",
+            "e",
+            ".",
+            "kh",
+            "i",
+            ".",
+            "y",
+            "o"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "देखियो",
+              "after": "d e . kh i . y o",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "raw": "।",
+          "normalized": "।",
+          "span": [
+            31,
+            32
+          ],
+          "kind": "sentence_end",
+          "language": "unknown",
+          "semiotic_class": "punctuation",
+          "phones": [
+            "sent"
+          ],
+          "source": "punctuation",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": []
+        }
+      ],
+      "chunks": [
+        {
+          "id": 0,
+          "token_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "text": "आज पच्चिस प्रतिशत growth देखियो।",
+          "boundary_strength": "sentence",
+          "sentence_type": "declarative",
+          "intonation_hint": "fall",
+          "safe_streaming_break_after": true
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "phone_number",
+      "category": "normalization",
+      "input": "मेरो नम्बर 9810223384 हो।",
+      "normalizedText": "मेरो नम्बर अन्ठान्नब्बे दश बाइस तेत्तिस चौरासी हो।",
+      "phoneSequence": [
+        "m",
+        "e",
+        ".",
+        "r",
+        "o",
+        "n",
+        "ax",
+        "m",
+        ".",
+        "b",
+        "ax",
+        "r",
+        "ax",
+        "n",
+        "txh",
+        "aa",
+        "n:",
+        "ax",
+        "b:",
+        "e",
+        "d",
+        "ax",
+        "s",
+        "b",
+        "aaj",
+        "s",
+        "t",
+        "e",
+        "t",
+        ".",
+        "t",
+        "i",
+        "s",
+        "ch",
+        "axw",
+        "r",
+        "aa",
+        "s",
+        "i",
+        "h",
+        "o",
+        "sent"
+      ],
+      "tokens": [
+        {
+          "id": 0,
+          "raw": "मेरो",
+          "normalized": "मेरो",
+          "span": [
+            0,
+            4
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "m",
+            "e",
+            ".",
+            "r",
+            "o"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "मेरो",
+              "after": "m e . r o",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "raw": "नम्बर",
+          "normalized": "नम्बर",
+          "span": [
+            5,
+            10
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "n",
+            "ax",
+            "m",
+            ".",
+            "b",
+            "ax",
+            "r"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "नम्बर",
+              "after": "n ax m . b ax r",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "raw": "अन्ठान्नब्बे",
+          "normalized": "अन्ठान्नब्बे",
+          "span": [
+            11,
+            23
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "ax",
+            "n",
+            "txh",
+            "aa",
+            "n:",
+            "ax",
+            "b:",
+            "e"
+          ],
+          "source": "g2p_rule",
+          "confidence": "low",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "akshara_parse",
+              "rule": "rule_g2p_default",
+              "span": "अन्ठान्नब्बे",
+              "after": "ax n txh aa n: ax b: e"
+            },
+            {
+              "type": "post_rule",
+              "rule": "gemination",
+              "span": "न्न",
+              "before": "n n",
+              "after": "n:"
+            },
+            {
+              "type": "post_rule",
+              "rule": "gemination",
+              "span": "ब्बे",
+              "before": "b b",
+              "after": "b:"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "raw": "दश",
+          "normalized": "दश",
+          "span": [
+            24,
+            26
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "d",
+            "ax",
+            "s"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "दश",
+              "after": "d ax s",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "raw": "बाइस",
+          "normalized": "बाइस",
+          "span": [
+            27,
+            31
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "b",
+            "aaj",
+            "s"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "बाइस",
+              "after": "b aaj s",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "raw": "तेत्तिस",
+          "normalized": "तेत्तिस",
+          "span": [
+            32,
+            39
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "t",
+            "e",
+            "t",
+            ".",
+            "t",
+            "i",
+            "s"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "तेत्तिस",
+              "after": "t e t . t i s",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "raw": "चौरासी",
+          "normalized": "चौरासी",
+          "span": [
+            40,
+            46
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "ch",
+            "axw",
+            "r",
+            "aa",
+            "s",
+            "i"
+          ],
+          "source": "g2p_rule",
+          "confidence": "low",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "akshara_parse",
+              "rule": "rule_g2p_default",
+              "span": "चौरासी",
+              "after": "ts axw r aa s i"
+            },
+            {
+              "type": "dialect_profile",
+              "rule": "clear_standard_affricates",
+              "span": "चौरासी",
+              "before": "ts axw r aa s i",
+              "after": "ch axw r aa s i",
+              "profile": "standard_clear_nepali"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "raw": "हो",
+          "normalized": "हो",
+          "span": [
+            47,
+            49
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "h",
+            "o"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "हो",
+              "after": "h o",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "raw": "।",
+          "normalized": "।",
+          "span": [
+            49,
+            50
+          ],
+          "kind": "sentence_end",
+          "language": "unknown",
+          "semiotic_class": "punctuation",
+          "phones": [
+            "sent"
+          ],
+          "source": "punctuation",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": []
+        }
+      ],
+      "chunks": [
+        {
+          "id": 0,
+          "token_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "text": "मेरो नम्बर अन्ठान्नब्बे दश बाइस तेत्तिस चौरासी हो।",
+          "boundary_strength": "sentence",
+          "sentence_type": "declarative",
+          "intonation_hint": "fall",
+          "safe_streaming_break_after": true
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "url_email",
+      "category": "protected-span",
+      "input": "कृपया https://example.com वा hello@example.com खोल्नुहोस्।",
+      "normalizedText": "कृपया H T T P S example dot com वा hello at example dot com खोल्नुहोस्।",
+      "phoneSequence": [
+        "k",
+        "r",
+        "i",
+        ".",
+        "p",
+        "ax",
+        ".",
+        "y",
+        "aa",
+        "e",
+        "ch",
+        "t",
+        "i",
+        "t",
+        "i",
+        "p",
+        "i",
+        "e",
+        "s",
+        "e",
+        "k",
+        "z",
+        "aa",
+        "m",
+        "p",
+        "ax",
+        "l",
+        "dx",
+        "ax",
+        "tx",
+        "k",
+        "o",
+        "m",
+        "w",
+        "aa",
+        "h",
+        "e",
+        "l",
+        "o",
+        "aa",
+        "tx",
+        "e",
+        "k",
+        "z",
+        "aa",
+        "m",
+        "p",
+        "ax",
+        "l",
+        "dx",
+        "ax",
+        "tx",
+        "k",
+        "o",
+        "m",
+        "kh",
+        "o",
+        "l",
+        ".",
+        "n",
+        "u",
+        ".",
+        "h",
+        "o",
+        "s",
+        "sent"
+      ],
+      "tokens": [
+        {
+          "id": 0,
+          "raw": "कृपया",
+          "normalized": "कृपया",
+          "span": [
+            0,
+            5
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "k",
+            "r",
+            "i",
+            ".",
+            "p",
+            "ax",
+            ".",
+            "y",
+            "aa"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "कृपया",
+              "after": "k r i . p ax . y aa",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "raw": "H",
+          "normalized": "H",
+          "span": [
+            6,
+            7
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "e",
+            "ch"
+          ],
+          "source": "latin_acronym",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_acronym_letter_names",
+              "span": "H",
+              "after": "e ts"
+            },
+            {
+              "type": "dialect_profile",
+              "rule": "profile_rewrite_on_latin_span",
+              "span": "H",
+              "before": "e ts",
+              "after": "e ch",
+              "profile": "real_nepali"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "raw": "T",
+          "normalized": "T",
+          "span": [
+            8,
+            9
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "t",
+            "i"
+          ],
+          "source": "latin_acronym",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_acronym_letter_names",
+              "span": "T",
+              "after": "t i"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "raw": "T",
+          "normalized": "T",
+          "span": [
+            10,
+            11
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "t",
+            "i"
+          ],
+          "source": "latin_acronym",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_acronym_letter_names",
+              "span": "T",
+              "after": "t i"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "raw": "P",
+          "normalized": "P",
+          "span": [
+            12,
+            13
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "p",
+            "i"
+          ],
+          "source": "latin_acronym",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_acronym_letter_names",
+              "span": "P",
+              "after": "p i"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "raw": "S",
+          "normalized": "S",
+          "span": [
+            14,
+            15
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "e",
+            "s"
+          ],
+          "source": "latin_acronym",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_acronym_letter_names",
+              "span": "S",
+              "after": "e s"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "raw": "example",
+          "normalized": "example",
+          "span": [
+            16,
+            23
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "e",
+            "k",
+            "z",
+            "aa",
+            "m",
+            "p",
+            "ax",
+            "l"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "example",
+              "after": "e k z aa m p ax l"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "raw": "dot",
+          "normalized": "dot",
+          "span": [
+            24,
+            27
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "dx",
+            "ax",
+            "tx"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "dot",
+              "after": "dx ax tx"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "raw": "com",
+          "normalized": "com",
+          "span": [
+            28,
+            31
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "k",
+            "o",
+            "m"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "com",
+              "after": "k o m"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "raw": "वा",
+          "normalized": "वा",
+          "span": [
+            32,
+            34
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "w",
+            "aa"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "वा",
+              "after": "w aa",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "raw": "hello",
+          "normalized": "hello",
+          "span": [
+            35,
+            40
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "h",
+            "e",
+            "l",
+            "o"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "hello",
+              "after": "h e l o"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "raw": "at",
+          "normalized": "at",
+          "span": [
+            41,
+            43
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "aa",
+            "tx"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "at",
+              "after": "aa tx"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "raw": "example",
+          "normalized": "example",
+          "span": [
+            44,
+            51
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "e",
+            "k",
+            "z",
+            "aa",
+            "m",
+            "p",
+            "ax",
+            "l"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "example",
+              "after": "e k z aa m p ax l"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "raw": "dot",
+          "normalized": "dot",
+          "span": [
+            52,
+            55
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "dx",
+            "ax",
+            "tx"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "dot",
+              "after": "dx ax tx"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "raw": "com",
+          "normalized": "com",
+          "span": [
+            56,
+            59
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "k",
+            "o",
+            "m"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "com",
+              "after": "k o m"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "raw": "खोल्नुहोस्",
+          "normalized": "खोल्नुहोस्",
+          "span": [
+            60,
+            70
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "kh",
+            "o",
+            "l",
+            ".",
+            "n",
+            "u",
+            ".",
+            "h",
+            "o",
+            "s"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "खोल्नुहोस्",
+              "after": "kh o l . n u . h o s",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "raw": "।",
+          "normalized": "।",
+          "span": [
+            70,
+            71
+          ],
+          "kind": "sentence_end",
+          "language": "unknown",
+          "semiotic_class": "punctuation",
+          "phones": [
+            "sent"
+          ],
+          "source": "punctuation",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": []
+        }
+      ],
+      "chunks": [
+        {
+          "id": 0,
+          "token_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "text": "कृपया H T T P S example dot com वा hello at example dot com खोल्नुहोस्।",
+          "boundary_strength": "sentence",
+          "sentence_type": "declarative",
+          "intonation_hint": "fall",
+          "safe_streaming_break_after": true
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "punctuation_question",
+      "category": "punctuation",
+      "input": "के तपाईं online हुनुहुन्छ?",
+      "normalizedText": "के तपाईं online हुनुहुन्छ?",
+      "phoneSequence": [
+        "k",
+        "e",
+        "t",
+        "ax",
+        ".",
+        "p",
+        "aajn",
+        "o",
+        "n",
+        "l",
+        "aa",
+        "i",
+        "n",
+        "h",
+        "u",
+        ".",
+        "n",
+        "u",
+        ".",
+        "h",
+        "u",
+        "n",
+        ".",
+        "chh",
+        "ax",
+        "sent"
+      ],
+      "tokens": [
+        {
+          "id": 0,
+          "raw": "के",
+          "normalized": "के",
+          "span": [
+            0,
+            2
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "k",
+            "e"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "के",
+              "after": "k e",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "raw": "तपाईं",
+          "normalized": "तपाईं",
+          "span": [
+            3,
+            8
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "t",
+            "ax",
+            ".",
+            "p",
+            "aajn"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "तपाईं",
+              "after": "t ax . p aajn",
+              "source": "google_ne_lr_2018:candidate"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "raw": "online",
+          "normalized": "online",
+          "span": [
+            9,
+            15
+          ],
+          "kind": "latin",
+          "language": "en",
+          "semiotic_class": "latin_word",
+          "phones": [
+            "o",
+            "n",
+            "l",
+            "aa",
+            "i",
+            "n"
+          ],
+          "source": "latin_lexicon",
+          "confidence": "medium",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "code_switch",
+              "rule": "latin_lexicon",
+              "span": "online",
+              "after": "o n l aa i n"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "raw": "हुनुहुन्छ",
+          "normalized": "हुनुहुन्छ",
+          "span": [
+            16,
+            25
+          ],
+          "kind": "devanagari",
+          "language": "ne",
+          "semiotic_class": "word",
+          "phones": [
+            "h",
+            "u",
+            ".",
+            "n",
+            "u",
+            ".",
+            "h",
+            "u",
+            "n",
+            ".",
+            "chh",
+            "ax"
+          ],
+          "source": "lexicon",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": [
+            {
+              "type": "lexicon_lookup",
+              "rule": "exact_match",
+              "span": "हुनुहुन्छ",
+              "after": "h u . n u . h u n . tsh ax",
+              "source": "google_ne_lr_2018:candidate"
+            },
+            {
+              "type": "dialect_profile",
+              "rule": "clear_standard_affricates",
+              "span": "हुनुहुन्छ",
+              "before": "h u . n u . h u n . tsh ax",
+              "after": "h u . n u . h u n . chh ax",
+              "profile": "standard_clear_nepali"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "raw": "?",
+          "normalized": "?",
+          "span": [
+            25,
+            26
+          ],
+          "kind": "question",
+          "language": "unknown",
+          "semiotic_class": "punctuation",
+          "phones": [
+            "sent"
+          ],
+          "source": "punctuation",
+          "confidence": "high",
+          "status": "ok",
+          "decisions": []
+        }
+      ],
+      "chunks": [
+        {
+          "id": 0,
+          "token_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "text": "के तपाईं online हुनुहुन्छ?",
+          "boundary_strength": "sentence",
+          "sentence_type": "yes_no_question",
+          "intonation_hint": "rise",
+          "safe_streaming_break_after": true
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

@@ -43,6 +43,10 @@ ts	t͡s	v1.0	alveolar; laminal contact (Pokharel 1989 palatograms; Clements & Kh
 tsh	t͡sʰ	v1.0
 dz	d͡z	v1.0
 dzh	d͡zʱ	v1.0
+ch	t͡ʃ	profile	real_nepali clear-profile affricate label
+chh	t͡ʃʰ	profile	real_nepali clear-profile aspirated affricate label
+j	d͡ʒ	profile	real_nepali clear-profile voiced affricate label
+jh	d͡ʒʱ	profile	real_nepali clear-profile breathy affricate label
 m	m	v1.0
 n	n	v1.0	covers orthographic न ञ ण in default mode
 ng	ŋ	v1.0	mostly word-final

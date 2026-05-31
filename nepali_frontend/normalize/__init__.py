@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from .numbers import normalize_numbers_in_text
 from .phones import normalize_phones_in_text
+from .text import normalize
 
 
 def normalize_text(text: str) -> str:
@@ -20,14 +21,12 @@ def normalize_text(text: str) -> str:
     the general cardinal pass; otherwise a 10-digit run gets read as a
     single (huge) cardinal instead of as five spoken pairs.
     """
-    text = normalize_phones_in_text(text)
-    text = normalize_numbers_in_text(text)
-    return text
+    return normalize(text)[0]
 
 
 __all__ = [
     "normalize_text",
+    "normalize",
     "normalize_numbers_in_text",
     "normalize_phones_in_text",
 ]
-

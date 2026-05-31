@@ -14,7 +14,10 @@ import json
 from dataclasses import asdict, dataclass, field
 from typing import Iterable
 
+from nepali_frontend.code_switch import english as english_g2p
 from nepali_frontend.g2p import phonemizer as base_phonemizer
+from nepali_frontend.normalize import text as text_norm
+from nepali_frontend.tokenize import script as tokenizer
 
 from .profiles import STANDARD_CLEAR_NEPALI, DialectProfile, get_profile
 
@@ -76,35 +79,60 @@ def phonemize_text(
     profile: str | DialectProfile = STANDARD_CLEAR_NEPALI.name,
     normalize: bool = True,
 ) -> list[WordResult]:
-    """Tokenize and phonemize text under a real_nepali profile."""
+    """Tokenize and phonemize text under a real_nepali profile.
+
+    Devanagari spans use the Nepali G2P path. Latin spans use the code-switch
+    path so English/product words are emitted as reviewable phones instead of
+    being dropped.
+    """
     prof = get_profile(profile) if isinstance(profile, str) else profile
-    base_words = base_phonemizer.phonemize_text(
-        text,
-        style="spoken_nepali",
-        normalize=normalize,
-    )
+    text = text_norm.normalize(text)[0] if normalize else text
     out: list[WordResult] = []
-    for base in base_words:
-        phones = _rewrite_phones(base.phones, prof)
-        decisions = _copy_decisions(base.decisions)
-        if phones != base.phones:
-            decisions.append({
-                "type": "dialect_profile",
-                "rule": "clear_standard_affricates",
-                "span": base.text,
-                "before": " ".join(base.phones),
-                "after": " ".join(phones),
-                "profile": prof.name,
-            })
-        out.append(WordResult(
-            text=base.text,
-            phones=phones,
-            source=base.source,
-            confidence=base.confidence,
-            profile=prof.name,
-            base_phones=list(base.phones),
-            decisions=decisions,
-        ))
+    for tok in tokenizer.tokenize(text):
+        if tok.kind == "devanagari":
+            base = base_phonemizer.phonemize_word(tok.text, style="spoken_nepali")
+            phones = _rewrite_phones(base.phones, prof)
+            decisions = _copy_decisions(base.decisions)
+            if phones != base.phones:
+                decisions.append({
+                    "type": "dialect_profile",
+                    "rule": "clear_standard_affricates",
+                    "span": base.text,
+                    "before": " ".join(base.phones),
+                    "after": " ".join(phones),
+                    "profile": prof.name,
+                })
+            out.append(WordResult(
+                text=base.text,
+                phones=phones,
+                source=base.source,
+                confidence=base.confidence,
+                profile=prof.name,
+                base_phones=list(base.phones),
+                decisions=decisions,
+            ))
+        elif tok.kind == "latin":
+            latin = english_g2p.phonemize_latin(tok.text)
+            phones = _rewrite_phones(latin.phones, prof)
+            decisions = _copy_decisions(latin.decisions)
+            if phones != latin.phones:
+                decisions.append({
+                    "type": "dialect_profile",
+                    "rule": "clear_standard_affricates",
+                    "span": tok.text,
+                    "before": " ".join(latin.phones),
+                    "after": " ".join(phones),
+                    "profile": prof.name,
+                })
+            out.append(WordResult(
+                text=tok.text,
+                phones=phones,
+                source=latin.source,
+                confidence=latin.confidence,
+                profile=prof.name,
+                base_phones=list(latin.phones),
+                decisions=decisions,
+            ))
     return out
 
 
@@ -135,4 +163,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

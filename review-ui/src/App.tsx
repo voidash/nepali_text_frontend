@@ -5,6 +5,8 @@ import {
   ChevronLeft,
   ChevronRight,
   CircleSlash,
+  FileText,
+  ListChecks,
   Search,
   Split,
 } from "lucide-react"
@@ -47,6 +49,43 @@ type ReviewData = {
   items: ReviewItem[]
 }
 
+type FrontendToken = {
+  id: number
+  raw: string
+  normalized: string
+  kind: string
+  language: string
+  semiotic_class: string
+  phones: string[]
+  source: string
+  confidence: string
+  status: string
+}
+
+type FrontendItem = {
+  id: string
+  category: string
+  input: string
+  normalizedText: string
+  phoneSequence: string[]
+  tokens: FrontendToken[]
+  chunks: Array<{
+    id: number
+    text: string
+    boundary_strength: string
+    sentence_type: string
+    intonation_hint: string
+  }>
+  warnings: Array<{ code: string; span: string; token_id: number }>
+}
+
+type FrontendData = {
+  title: string
+  generatedBy: string
+  profile: string
+  items: FrontendItem[]
+}
+
 type Vote = "old" | "real" | "tie" | "bad" | ""
 
 type ReviewState = Record<string, { vote: Vote; notes: string }>
@@ -64,6 +103,8 @@ function loadState(): ReviewState {
 
 function App() {
   const [data, setData] = useState<ReviewData | null>(null)
+  const [frontendData, setFrontendData] = useState<FrontendData | null>(null)
+  const [mode, setMode] = useState<"frontend" | "audio">("frontend")
   const [selectedId, setSelectedId] = useState("")
   const [query, setQuery] = useState("")
   const [filter, setFilter] = useState<"all" | "changed" | "pending">("changed")
@@ -76,6 +117,9 @@ function App() {
         setData(payload)
         setSelectedId(payload.items[0]?.id ?? "")
       })
+    fetch("/frontend-data.json")
+      .then((response) => response.json())
+      .then((payload: FrontendData) => setFrontendData(payload))
   }, [])
 
   useEffect(() => {
@@ -166,7 +210,7 @@ function App() {
     URL.revokeObjectURL(url)
   }
 
-  if (!data) {
+  if (!data || !frontendData) {
     return (
       <main className="flex min-h-svh items-center justify-center bg-background p-6">
         <Card className="w-full max-w-sm">
@@ -207,6 +251,16 @@ function App() {
 
   const activeState = reviewState[selected.id] ?? { vote: "", notes: "" }
 
+  if (mode === "frontend") {
+    return (
+      <FrontendAudit
+        data={frontendData}
+        mode={mode}
+        setMode={setMode}
+      />
+    )
+  }
+
   return (
     <main className="min-h-svh bg-background text-foreground">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-5 px-4 py-5 sm:px-6 lg:px-8">
@@ -228,6 +282,7 @@ function App() {
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-2">
+            <ModeButtons mode={mode} setMode={setMode} />
             <Button variant="outline" onClick={exportTsv}>
               <ArrowDownToLine className="h-4 w-4" />
               Export TSV
@@ -404,6 +459,282 @@ function App() {
         </section>
       </div>
     </main>
+  )
+}
+
+function ModeButtons({
+  mode,
+  setMode,
+}: {
+  mode: "frontend" | "audio"
+  setMode: (mode: "frontend" | "audio") => void
+}) {
+  return (
+    <div className="flex rounded-md border p-1">
+      <Button
+        variant={mode === "frontend" ? "default" : "ghost"}
+        size="sm"
+        onClick={() => setMode("frontend")}
+      >
+        <FileText className="h-4 w-4" />
+        Frontend
+      </Button>
+      <Button
+        variant={mode === "audio" ? "default" : "ghost"}
+        size="sm"
+        onClick={() => setMode("audio")}
+      >
+        <ListChecks className="h-4 w-4" />
+        Listening
+      </Button>
+    </div>
+  )
+}
+
+function FrontendAudit({
+  data,
+  mode,
+  setMode,
+}: {
+  data: FrontendData
+  mode: "frontend" | "audio"
+  setMode: (mode: "frontend" | "audio") => void
+}) {
+  const [selectedId, setSelectedId] = useState(data.items[0]?.id ?? "")
+  const [query, setQuery] = useState("")
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    if (!q) return data.items
+    return data.items.filter((item) =>
+      [
+        item.id,
+        item.category,
+        item.input,
+        item.normalizedText,
+        item.phoneSequence.join(" "),
+      ]
+        .join(" ")
+        .toLowerCase()
+        .includes(q),
+    )
+  }, [data.items, query])
+  const selected = filtered.find((item) => item.id === selectedId) ?? filtered[0]
+
+  return (
+    <main className="min-h-svh bg-background text-foreground">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-5 px-4 py-5 sm:px-6 lg:px-8">
+        <header className="flex flex-col gap-4 border-b pb-5 lg:flex-row lg:items-end lg:justify-between">
+          <div className="space-y-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <Badge variant="outline">Text frontend</Badge>
+              <Badge variant="muted">{data.items.length} cases</Badge>
+              <Badge variant="muted">{data.profile}</Badge>
+            </div>
+            <div>
+              <h1 className="text-2xl font-semibold tracking-normal sm:text-3xl">
+                Nepali text frontend audit
+              </h1>
+              <p className="mt-2 max-w-3xl text-sm leading-6 text-muted-foreground">
+                Inspect normalization, code-mixed spans, punctuation tokens,
+                and generated phone sequences before training.
+              </p>
+            </div>
+          </div>
+          <ModeButtons mode={mode} setMode={setMode} />
+        </header>
+
+        <section className="grid gap-5 lg:grid-cols-[320px_minmax(0,1fr)]">
+          <aside className="space-y-3">
+            <Card>
+              <CardContent className="space-y-3 p-4">
+                <div className="relative">
+                  <Search className="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    value={query}
+                    onChange={(event) => setQuery(event.target.value)}
+                    placeholder="Search cases, text, phones"
+                    className="pl-9"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="max-h-[calc(100svh-190px)] space-y-2 overflow-auto pr-1">
+              {filtered.map((item) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => setSelectedId(item.id)}
+                  className={cn(
+                    "w-full rounded-lg border bg-background p-3 text-left transition-colors hover:bg-accent",
+                    selected?.id === item.id && "border-foreground",
+                  )}
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="text-sm font-semibold leading-5">
+                      {item.input}
+                    </span>
+                    {item.warnings.length ? (
+                      <Badge className="border-transparent bg-destructive text-destructive-foreground">
+                        {item.warnings.length}
+                      </Badge>
+                    ) : (
+                      <Check className="mt-0.5 h-4 w-4 text-foreground" />
+                    )}
+                  </div>
+                  <div className="mt-2 flex flex-wrap gap-1">
+                    <Badge variant="outline">{item.category}</Badge>
+                    <Badge variant="muted">{item.phoneSequence.length} phones</Badge>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </aside>
+
+          {selected ? <FrontendDetail item={selected} /> : null}
+        </section>
+      </div>
+    </main>
+  )
+}
+
+function FrontendDetail({ item }: { item: FrontendItem }) {
+  return (
+    <section className="space-y-5">
+      <section className="space-y-4 rounded-lg border bg-background p-4 sm:p-5">
+        <div className="flex flex-wrap items-center gap-2">
+          <Badge variant="outline">{item.category}</Badge>
+          {item.warnings.length ? (
+            <Badge className="border-transparent bg-destructive text-destructive-foreground">
+              {item.warnings.length} warnings
+            </Badge>
+          ) : (
+            <Badge variant="muted">clean</Badge>
+          )}
+        </div>
+        <div className="grid gap-4 xl:grid-cols-2">
+          <TextBlock title="Input" text={item.input} />
+          <TextBlock title="Normalized" text={item.normalizedText} />
+        </div>
+        <PhoneChips title="Phone sequence" phones={item.phoneSequence} />
+      </section>
+
+      <section className="grid gap-5 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)]">
+        <Card>
+          <CardHeader>
+            <CardTitle>Tokens</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            {item.tokens.map((token) => (
+              <div
+                key={token.id}
+                className="grid gap-3 rounded-md border p-3 text-sm md:grid-cols-[minmax(0,1fr)_160px_minmax(0,1.4fr)]"
+              >
+                <div>
+                  <div className="font-semibold">{token.raw}</div>
+                  <div className="mt-1 text-xs text-muted-foreground">
+                    {token.kind} · {token.language} · {token.source}
+                  </div>
+                </div>
+                <Badge
+                  variant={token.status === "review" ? "outline" : "muted"}
+                  className="h-fit w-fit"
+                >
+                  {token.confidence || token.status}
+                </Badge>
+                <div className="flex flex-wrap gap-1">
+                  {token.phones.map((phone, index) => (
+                    <span
+                      key={`${token.id}-${phone}-${index}`}
+                      className="rounded border bg-muted/30 px-2 py-1 font-mono text-xs"
+                    >
+                      {phone}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </CardContent>
+        </Card>
+
+        <div className="space-y-5">
+          <Card>
+            <CardHeader>
+              <CardTitle>Chunks</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2 text-sm">
+              {item.chunks.map((chunk) => (
+                <div key={chunk.id} className="rounded-md border p-3">
+                  <div className="font-medium">{chunk.text}</div>
+                  <div className="mt-2 flex flex-wrap gap-1">
+                    <Badge variant="outline">{chunk.boundary_strength}</Badge>
+                    <Badge variant="muted">{chunk.sentence_type}</Badge>
+                    <Badge variant="muted">{chunk.intonation_hint}</Badge>
+                  </div>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Warnings</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              {item.warnings.length ? (
+                item.warnings.map((warning, index) => (
+                  <div key={index} className="rounded-md border p-3 text-sm">
+                    <div className="font-medium">{warning.code}</div>
+                    <div className="mt-1 text-muted-foreground">{warning.span}</div>
+                  </div>
+                ))
+              ) : (
+                <div className="rounded-md border p-3 text-sm text-muted-foreground">
+                  No warnings.
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </section>
+  )
+}
+
+function TextBlock({ title, text }: { title: string; text: string }) {
+  return (
+    <div>
+      <div className="mb-2 text-xs font-medium uppercase tracking-normal text-muted-foreground">
+        {title}
+      </div>
+      <div className="min-h-20 rounded-md border bg-muted/30 p-3 text-lg leading-8">
+        {text}
+      </div>
+    </div>
+  )
+}
+
+function PhoneChips({ title, phones }: { title: string; phones: string[] }) {
+  return (
+    <div>
+      <div className="mb-2 flex items-center gap-2 text-xs font-medium uppercase tracking-normal text-muted-foreground">
+        <Split className="h-3.5 w-3.5" />
+        {title}
+      </div>
+      <div className="flex min-h-12 flex-wrap gap-1.5 rounded-md border bg-muted/30 p-3">
+        {phones.map((phone, index) => (
+          <span
+            key={`${phone}-${index}`}
+            className={cn(
+              "rounded border bg-background px-2 py-1 font-mono text-xs",
+              phone === "." && "text-muted-foreground",
+            )}
+          >
+            {phone}
+          </span>
+        ))}
+      </div>
+    </div>
   )
 }
 

@@ -16,6 +16,7 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = [
     "nepali_frontend",
+    "nepali_frontend.code_switch",
     "nepali_frontend.g2p",
     "nepali_frontend.normalize",
     "nepali_frontend.tokenize",
@@ -23,8 +24,11 @@ packages = [
     "real_nepali",
 ]
 
+[project.scripts]
+nepali-frontend = "nepali_frontend.__main__:main"
+nepali-tts-manifest = "real_nepali.manifest:main"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 addopts = "-q"
-
